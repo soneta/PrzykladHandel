@@ -37,9 +37,9 @@ namespace PrzykladHandel
         protected override void Dispose( bool disposing ) {
             if( disposing ) {
                 ////////////////////////////////////////////////////////////////
-                // Poniewaø obiekt Login moøe przechowywaÊ po≥πczenie do
-                // bazy danych (IDbConnection) naleøy zwolniÊ zasoby przez
-                // niego uøywane.
+                // Poniewa≈º obiekt Login mo≈ºe przechowywaƒá po≈ÇƒÖczenie do
+                // bazy danych (IDbConnection) nale≈ºy zwolniƒá zasoby przez
+                // niego u≈ºywane.
                 //
                 if (login!=null)
                     login.Dispose();
@@ -62,7 +62,7 @@ namespace PrzykladHandel
 					this.buttonKorekta = new System.Windows.Forms.Button();
 					this.textID = new System.Windows.Forms.TextBox();
 					this.buttonPrzelew = new System.Windows.Forms.Button();
-					this.cbGotÛwka = new System.Windows.Forms.CheckBox();
+					this.cbGot√≥wka = new System.Windows.Forms.CheckBox();
 					this.cbPrzelew = new System.Windows.Forms.CheckBox();
 					this.buttonRW = new System.Windows.Forms.Button();
 					this.buttonKontrahent = new System.Windows.Forms.Button();
@@ -70,7 +70,7 @@ namespace PrzykladHandel
 					this.buttonTowary = new System.Windows.Forms.Button();
 					this.buttonPZZK = new System.Windows.Forms.Button();
 					this.buttonRaport = new System.Windows.Forms.Button();
-					this.buttonWp≥ata = new System.Windows.Forms.Button();
+					this.buttonWp≈Çata = new System.Windows.Forms.Button();
 					this.buttonRozliczenie = new System.Windows.Forms.Button();
 					this.buttonEwidencjaSprzedazy = new System.Windows.Forms.Button();
 					this.SuspendLayout();
@@ -102,7 +102,7 @@ namespace PrzykladHandel
 					this.buttonKorekta.Name = "buttonKorekta";
 					this.buttonKorekta.Size = new System.Drawing.Size(164, 44);
 					this.buttonKorekta.TabIndex = 3;
-					this.buttonKorekta.Text = "Korekta sprzedaøy dokumentu o zadanym ID";
+					this.buttonKorekta.Text = "Korekta sprzeda≈ºy dokumentu o zadanym ID";
 					this.buttonKorekta.Click += new System.EventHandler(this.buttonKorekta_Click);
 					// 
 					// textID
@@ -120,18 +120,18 @@ namespace PrzykladHandel
 					this.buttonPrzelew.Name = "buttonPrzelew";
 					this.buttonPrzelew.Size = new System.Drawing.Size(164, 44);
 					this.buttonPrzelew.TabIndex = 4;
-					this.buttonPrzelew.Text = "Faktura sprzedaøy";
+					this.buttonPrzelew.Text = "Faktura sprzeda≈ºy";
 					this.buttonPrzelew.Click += new System.EventHandler(this.buttonPrzelew_Click);
 					// 
-					// cbGotÛwka
+					// cbGot√≥wka
 					// 
-					this.cbGotÛwka.Checked = true;
-					this.cbGotÛwka.CheckState = System.Windows.Forms.CheckState.Checked;
-					this.cbGotÛwka.Location = new System.Drawing.Point(200, 252);
-					this.cbGotÛwka.Name = "cbGotÛwka";
-					this.cbGotÛwka.Size = new System.Drawing.Size(128, 24);
-					this.cbGotÛwka.TabIndex = 7;
-					this.cbGotÛwka.Text = "Zap≥acono gotÛwkπ";
+					this.cbGot√≥wka.Checked = true;
+					this.cbGot√≥wka.CheckState = System.Windows.Forms.CheckState.Checked;
+					this.cbGot√≥wka.Location = new System.Drawing.Point(200, 252);
+					this.cbGot√≥wka.Name = "cbGot√≥wka";
+					this.cbGot√≥wka.Size = new System.Drawing.Size(128, 24);
+					this.cbGot√≥wka.TabIndex = 7;
+					this.cbGot√≥wka.Text = "Zap≈Çacono got√≥wkƒÖ";
 					// 
 					// cbPrzelew
 					// 
@@ -160,7 +160,7 @@ namespace PrzykladHandel
 					this.buttonKontrahent.Name = "buttonKontrahent";
 					this.buttonKontrahent.Size = new System.Drawing.Size(164, 48);
 					this.buttonKontrahent.TabIndex = 5;
-					this.buttonKontrahent.Text = "Zak≥adanie karty kontrahenta";
+					this.buttonKontrahent.Text = "Zak≈Çadanie karty kontrahenta";
 					this.buttonKontrahent.Click += new System.EventHandler(this.buttonKontrahent_Click);
 					// 
 					// buttonKontrahenci
@@ -170,7 +170,7 @@ namespace PrzykladHandel
 					this.buttonKontrahenci.Name = "buttonKontrahenci";
 					this.buttonKontrahenci.Size = new System.Drawing.Size(164, 44);
 					this.buttonKontrahenci.TabIndex = 4;
-					this.buttonKontrahenci.Text = "Filtrowana lista kontrahentÛw";
+					this.buttonKontrahenci.Text = "Filtrowana lista kontrahent√≥w";
 					this.buttonKontrahenci.Click += new System.EventHandler(this.buttonKontrahenci_Click);
 					// 
 					// buttonTowary
@@ -180,7 +180,7 @@ namespace PrzykladHandel
 					this.buttonTowary.Name = "buttonTowary";
 					this.buttonTowary.Size = new System.Drawing.Size(164, 44);
 					this.buttonTowary.TabIndex = 4;
-					this.buttonTowary.Text = "Filtrowana lista towarÛw";
+					this.buttonTowary.Text = "Filtrowana lista towar√≥w";
 					this.buttonTowary.Click += new System.EventHandler(this.buttonTowary_Click);
 					// 
 					// buttonPZZK
@@ -203,15 +203,15 @@ namespace PrzykladHandel
 					this.buttonRaport.Text = "Generowanie raportu kasowego";
 					this.buttonRaport.Click += new System.EventHandler(this.buttonRaport_Click);
 					// 
-					// buttonWp≥ata
+					// buttonWp≈Çata
 					// 
-					this.buttonWp≥ata.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonWp≥ata.Location = new System.Drawing.Point(360, 72);
-					this.buttonWp≥ata.Name = "buttonWp≥ata";
-					this.buttonWp≥ata.Size = new System.Drawing.Size(164, 48);
-					this.buttonWp≥ata.TabIndex = 5;
-					this.buttonWp≥ata.Text = "Generowanie wp≥aty";
-					this.buttonWp≥ata.Click += new System.EventHandler(this.buttonWp≥ata_Click);
+					this.buttonWp≈Çata.FlatStyle = System.Windows.Forms.FlatStyle.System;
+					this.buttonWp≈Çata.Location = new System.Drawing.Point(360, 72);
+					this.buttonWp≈Çata.Name = "buttonWp≈Çata";
+					this.buttonWp≈Çata.Size = new System.Drawing.Size(164, 48);
+					this.buttonWp≈Çata.TabIndex = 5;
+					this.buttonWp≈Çata.Text = "Generowanie wp≈Çaty";
+					this.buttonWp≈Çata.Click += new System.EventHandler(this.buttonWp≈Çata_Click);
 					// 
 					// buttonRozliczenie
 					// 
@@ -230,7 +230,7 @@ namespace PrzykladHandel
 					this.buttonEwidencjaSprzedazy.Name = "buttonEwidencjaSprzedazy";
 					this.buttonEwidencjaSprzedazy.Size = new System.Drawing.Size(164, 48);
 					this.buttonEwidencjaSprzedazy.TabIndex = 9;
-					this.buttonEwidencjaSprzedazy.Text = "Ewidencja sprzedaøy";
+					this.buttonEwidencjaSprzedazy.Text = "Ewidencja sprzeda≈ºy";
 					this.buttonEwidencjaSprzedazy.Click += new System.EventHandler(this.buttonEwidencjaSprzedazy_Click);
 					// 
 					// Form1
@@ -239,7 +239,7 @@ namespace PrzykladHandel
 					this.ClientSize = new System.Drawing.Size(532, 418);
 					this.Controls.Add(this.buttonEwidencjaSprzedazy);
 					this.Controls.Add(this.cbPrzelew);
-					this.Controls.Add(this.cbGotÛwka);
+					this.Controls.Add(this.cbGot√≥wka);
 					this.Controls.Add(this.textID);
 					this.Controls.Add(this.buttonKorekta);
 					this.Controls.Add(this.buttonPZ);
@@ -251,7 +251,7 @@ namespace PrzykladHandel
 					this.Controls.Add(this.buttonTowary);
 					this.Controls.Add(this.buttonPZZK);
 					this.Controls.Add(this.buttonRaport);
-					this.Controls.Add(this.buttonWp≥ata);
+					this.Controls.Add(this.buttonWp≈Çata);
 					this.Controls.Add(this.buttonRozliczenie);
 					this.Name = "Form1";
 					this.Text = "Form1";
@@ -269,7 +269,7 @@ namespace PrzykladHandel
         static void Main() {
             //
             // Przed jakimikolwiek operacjami na logice biznesowej enova
-            // naleøy zadbaÊ o to, øeby wszystkie biblioteki by≥y za≥adowe.
+            // nale≈ºy zadbaƒá o to, ≈ºeby wszystkie biblioteki by≈Çy za≈Çadowe.
             // Powoduje to ich automatyczne zarejestrowanie i zainicjowanie.
             //
 			Soneta.Start.Loader loader = new Soneta.Start.Loader();
@@ -286,7 +286,7 @@ namespace PrzykladHandel
         private System.Windows.Forms.TextBox textID;
         private System.Windows.Forms.Button buttonKorekta;
         private System.Windows.Forms.Button buttonPrzelew;
-        private System.Windows.Forms.CheckBox cbGotÛwka;
+        private System.Windows.Forms.CheckBox cbGot√≥wka;
         private System.Windows.Forms.CheckBox cbPrzelew;
         private System.Windows.Forms.Button buttonRW;
         private System.Windows.Forms.Button buttonKontrahent;
@@ -294,34 +294,34 @@ namespace PrzykladHandel
         private System.Windows.Forms.Button buttonTowary;
         private System.Windows.Forms.Button buttonPZZK;
         private System.Windows.Forms.Button buttonRaport;
-        private System.Windows.Forms.Button buttonWp≥ata;
+        private System.Windows.Forms.Button buttonWp≈Çata;
         private System.Windows.Forms.Button buttonRozliczenie;
 			private Button buttonEwidencjaSprzedazy;
 
         /// <summary>
-        /// To jest pole zawierajπce informacje o loginie do bazy danych,
-        /// na ktÛrym bÍdπ robione wszystkie operacje.
+        /// To jest pole zawierajƒÖce informacje o loginie do bazy danych,
+        /// na kt√≥rym bƒôdƒÖ robione wszystkie operacje.
         /// </summary>
         Login login;
 
-        #region Inicjacja po≥πczenia do bazy danych
+        #region Inicjacja po≈ÇƒÖczenia do bazy danych
 
         private void Form1_Load(object sender, System.EventArgs e) {
             /////////////////////////////////////////////////////////////////
-            // NastÍpnie uzyskujemy dostÍp do obiektu bazy danych
-            // reprezentujπcego bazÍ danych jako takπ, bez zalogowanego
-            // jeszcze operatora. Rejestrowanie bazy danych moøna zrobiÊ 
-            // przy pomocy programu enova. Napis "Demo" jest nazwπ bazy
-            // wyúwietlanπ w programie enova.
+            // Nastƒôpnie uzyskujemy dostƒôp do obiektu bazy danych
+            // reprezentujƒÖcego bazƒô danych jako takƒÖ, bez zalogowanego
+            // jeszcze operatora. Rejestrowanie bazy danych mo≈ºna zrobiƒá 
+            // przy pomocy programu enova. Napis "Demo" jest nazwƒÖ bazy
+            // wy≈õwietlanƒÖ w programie enova.
             //
             Database database = BusApplication.Instance["Demo"];
 
             ////////////////////////////////////////////////////////////////
             // Kolejnym krokiem jest uzyskanie loginu do bazy danych, czyli
-            // zalogowanie siÍ operatora. Oczywiúcie odpowiedni operator
-            // musi byÊ wczeúniej wprowadzony w programie enova.
-            // W przyk≥adzie poniøej logujÍ siÍ na operatora "Administrator"
-            // z pustym has≥em (brak has≥a).
+            // zalogowanie siƒô operatora. Oczywi≈õcie odpowiedni operator
+            // musi byƒá wcze≈õniej wprowadzony w programie enova.
+            // W przyk≈Çadzie poni≈ºej logujƒô siƒô na operatora "Administrator"
+            // z pustym has≈Çem (brak has≈Ça).
             //
             login = database.Login(false, "Administrator", "");
         }
@@ -332,25 +332,25 @@ namespace PrzykladHandel
 
         private void buttonPZ_Click(object sender, System.EventArgs e) {
             ///////////////////////////////////////////////////////////////////
-            // Metoda tworzy nowy dokument PZ wype≥niajπc go przyk≥adowymi
+            // Metoda tworzy nowy dokument PZ wype≈ÇniajƒÖc go przyk≈Çadowymi
             // pozycjami
             //
 
             //////////////////////////////////////////////////////////////////
-            // RozpoczÍcie tworzenia dokumentu (w ogÛle operacji na logice
+            // Rozpoczƒôcie tworzenia dokumentu (w og√≥le operacji na logice
             // biznesowej) polega na utworzeniu obiektu sesji (Session),
-            // w ktÛrym bÍdπ odbywaÊ siÍ poszczegÛlne operacje.
-            // Pierwszy parametr okreúla, czy sesja jest tylko do odczytu
-            // danych, drugi parametr, czy sesja bÍdzie modyfikowaÊ ustawienia
-            // konfiguracyjne (tj definicje dokumentÛw, jednostki, 
+            // w kt√≥rym bƒôdƒÖ odbywaƒá siƒô poszczeg√≥lne operacje.
+            // Pierwszy parametr okre≈õla, czy sesja jest tylko do odczytu
+            // danych, drugi parametr, czy sesja bƒôdzie modyfikowaƒá ustawienia
+            // konfiguracyjne (tj definicje dokument√≥w, jednostki, 
             // definicje cen, itp). Standardowo obydwa parametry dajemy false.
             //
             using (Session session = login.CreateSession(false, false)) {
 
                 //////////////////////////////////////////////////////////////////
-                // Po utworzeniu sesji dobrze jest sobie przygotowaÊ odpowiednie 
-                // zmiene reprezentujπce poszczegÛlne modu≥y programu w tej sesji.
-                // Wystarczy przygotwaÊ tylko te modu≥y, ktÛre bÍdπ nam potrzebne.
+                // Po utworzeniu sesji dobrze jest sobie przygotowaƒá odpowiednie 
+                // zmiene reprezentujƒÖce poszczeg√≥lne modu≈Çy programu w tej sesji.
+                // Wystarczy przygotwaƒá tylko te modu≈Çy, kt√≥re bƒôdƒÖ nam potrzebne.
                 //
                 HandelModule hm = HandelModule.GetInstance(session);
                 TowaryModule tm = TowaryModule.GetInstance(session);
@@ -358,20 +358,20 @@ namespace PrzykladHandel
                 CRMModule cm = CRMModule.GetInstance(session);
 
                 //////////////////////////////////////////////////////////////////
-                // Wszystkie operacje wykonujemy w transakcji sesji ktÛrπ naleøy
-                // na poczπtku otworzyÊ. W transakcji moøemy wskazaÊ czy bÍdπ 
+                // Wszystkie operacje wykonujemy w transakcji sesji kt√≥rƒÖ nale≈ºy
+                // na poczƒÖtku otworzyƒá. W transakcji mo≈ºemy wskazaƒá czy bƒôdƒÖ 
                 // robione zmiany w danych.
                 //
                 using (ITransaction trans = session.Logout(true)) {
 
                     //////////////////////////////////////////////////////////////////
-                    // NastÍpnie naleøy utworzyÊ nowy obiekt reprezentujπcy dokument
-                    // handlowy (nag≥Ûwek dokumentu). 
+                    // Nastƒôpnie nale≈ºy utworzyƒá nowy obiekt reprezentujƒÖcy dokument
+                    // handlowy (nag≈Ç√≥wek dokumentu). 
                     //
                     DokumentHandlowy dokument = new DokumentHandlowy();
 		
                     //////////////////////////////////////////////////////////////////
-                    // Nowy dokument nalezy rÛwnieø zwiπzaÊ z definicjπ dokumentu 
+                    // Nowy dokument nalezy r√≥wnie≈º zwiƒÖzaƒá z definicjƒÖ dokumentu 
                     // handlowego. W tym przypadku wyszukujemy definicje wyszukujemy
                     // wg jej symbolu "PZ".
                     //
@@ -381,8 +381,8 @@ namespace PrzykladHandel
                     dokument.Definicja = definicja;
 
                     /////////////////////////////////////////////////////////////////
-                    // Dokument naleøy teø przypisaÊ do magazynu, do ktÛrego bÍdzie
-                    // przyjmowany towar. Poniøej przypisywany jest standardowy
+                    // Dokument nale≈ºy te≈º przypisaƒá do magazynu, do kt√≥rego bƒôdzie
+                    // przyjmowany towar. Poni≈ºej przypisywany jest standardowy
                     // magazyn programu "Firma".
                     //
                     dokument.Magazyn = mm.Magazyny.Firma;
@@ -393,9 +393,9 @@ namespace PrzykladHandel
                     hm.DokHandlowe.AddRow(dokument);
 
                     /////////////////////////////////////////////////////////////////
-                    // PrzyjÍcie magazynowe PZ (z zewnπtrz) wymaga rÛwnieø
-                    // przypisania kontrahenta, od ktÛrego towaru jest przyjmowany.
-                    // Przyk≥ad prezentuje przypisanie dokumentowi kontrahenta
+                    // Przyjƒôcie magazynowe PZ (z zewnƒÖtrz) wymaga r√≥wnie≈º
+                    // przypisania kontrahenta, od kt√≥rego towaru jest przyjmowany.
+                    // Przyk≈Çad prezentuje przypisanie dokumentowi kontrahenta
                     // o kodzie "ABC".
                     Kontrahent kontrahent = cm.Kontrahenci.WgKodu["ABC"];
                     if (kontrahent==null) 
@@ -404,95 +404,95 @@ namespace PrzykladHandel
 
                     /////////////////////////////////////////////////////////////////
                     // PUNKT A ******************************************************
-                    // W kartotece towarÛw wyszukaÊ towar. Przyk≥ad poniøej
+                    // W kartotece towar√≥w wyszukaƒá towar. Przyk≈Çad poni≈ºej
                     // prezentuje wyszukanie towaru wg kodu EAN "2000000000022". 
-                    // Poniewaø w kartotece moøe znajdowaÊ siÍ wiele towarÛw o tym 
+                    // Poniewa≈º w kartotece mo≈ºe znajdowaƒá siƒô wiele towar√≥w o tym 
                     // samym kodzie wybrazy zostanie pierwszy z nich.
                     //
 					Towar towar = (Towar)tm.Towary.WgEAN["2000000000954"].GetNext();
                     if (towar!=null) {
                         //////////////////////////////////////////////////////////////
-                        // UtworzyÊ nowy obiekt pozycji dokumentu handlowego, ktÛry
+                        // Utworzyƒá nowy obiekt pozycji dokumentu handlowego, kt√≥ry
                         // zostanie dodany do sescji.
                         //
                         PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
                         hm.PozycjeDokHan.AddRow(pozycja);
 
                         //////////////////////////////////////////////////////////////
-                        // PrzypisaÊ towar do nowo utworzonej pozycji dokumentu, czyli
-                        // wskazaÊ, ktÛry towar ma byÊ przyjÍty do magazynu.
+                        // Przypisaƒá towar do nowo utworzonej pozycji dokumentu, czyli
+                        // wskazaƒá, kt√≥ry towar ma byƒá przyjƒôty do magazynu.
                         //
                         pozycja.Towar = towar;
 
                         //////////////////////////////////////////////////////////////
-                        // W pozycji dokumentu naleøy jeszcze wprowadziÊ iloúÊ
-                        // towaru przyjmowanego na magazyn. IloúÊ reprezentowana jest
-                        // przez liczbÍ 10 bÍdπcπ wartoúciπ iloúci (pierwszy parametr) 
-                        // oraz jednostkÍ opisujπcπ tÍ iloúÊ (drugi parametr). Jeøeli
+                        // W pozycji dokumentu nale≈ºy jeszcze wprowadziƒá ilo≈õƒá
+                        // towaru przyjmowanego na magazyn. Ilo≈õƒá reprezentowana jest
+                        // przez liczbƒô 10 bƒôdƒÖcƒÖ warto≈õciƒÖ ilo≈õci (pierwszy parametr) 
+                        // oraz jednostkƒô opisujƒÖcƒÖ tƒô ilo≈õƒá (drugi parametr). Je≈ºeli
                         // jednostka jest null, to przyjmowana jest jednostka z
                         // karty towarowej.
-                        // Poniøej znajduje siÍ rÛwnieø wykomentowany przyk≥ad, w
-                        // ktÛrym w sposÛb jawny jest wskazanie na jednostkÍ w metrach.
+                        // Poni≈ºej znajduje siƒô r√≥wnie≈º wykomentowany przyk≈Çad, w
+                        // kt√≥rym w spos√≥b jawny jest wskazanie na jednostkƒô w metrach.
                         //
                         pozycja.Ilosc = new Quantity(10, null);
                         // pozycja.Ilosc = new Quantity(10, "m");
 
                         //////////////////////////////////////////////////////////////
-                        // Pozycji dokumentu naleøy rÛwnieø przypisaÊ cenÍ w jakiej
-                        // bÍdzie on wprowadzany do magazynu. (cena zakupu)
-                        // Poniøej przypisywana jest cena w PLN. Dlatego nie jest
-                        // wyspecyfikowany drugi parametr okreúlajπcy walutÍ ceny.
+                        // Pozycji dokumentu nale≈ºy r√≥wnie≈º przypisaƒá cenƒô w jakiej
+                        // bƒôdzie on wprowadzany do magazynu. (cena zakupu)
+                        // Poni≈ºej przypisywana jest cena w PLN. Dlatego nie jest
+                        // wyspecyfikowany drugi parametr okre≈õlajƒÖcy walutƒô ceny.
                         //
                         pozycja.Cena = new DoubleCy(12.34);
 
                         //////////////////////////////////////////////////////////////
-                        // PoszczegÛlnym pozycjπ moøna przypisaÊ rÛwnieø dodatkowe
-                        // cechy, ktÛre zaleøne sπ od konfiguracji programu. Przyk≥ad
-                        // pokazuje jak ustawiÊ cechÍ z numerem beli.
-                        // Kod jest wykomentowany, poniewaø baza demo nie posiada
+                        // Poszczeg√≥lnym pozycjƒÖ mo≈ºna przypisaƒá r√≥wnie≈º dodatkowe
+                        // cechy, kt√≥re zale≈ºne sƒÖ od konfiguracji programu. Przyk≈Çad
+                        // pokazuje jak ustawiƒá cechƒô z numerem beli.
+                        // Kod jest wykomentowany, poniewa≈º baza demo nie posiada
                         // zdefiniowanej tej cechy.
                         //
                         //pozycja.Features["Numer beli"] = "123456";
                     }
 
                     /////////////////////////////////////////////////////////////////
-                    // Jeøeli na dokument ma zawieraÊ wiÍcej pozycji magazynowych
-                    // to naleøy ponownie przejúÊ do PUNKTU A.
+                    // Je≈ºeli na dokument ma zawieraƒá wiƒôcej pozycji magazynowych
+                    // to nale≈ºy ponownie przej≈õƒá do PUNKTU A.
                     //
 
                     /////////////////////////////////////////////////////////////////
-                    // Dokumentowi podobnie jak pozycji dokumentu rÛwnieø moøna
-                    // przypisaÊ dodatkowe cechy zaleøne od konfiguracji programu. 
-                    // Przyk≥ad pokazuje jak ustawiÊ cechÍ z lokalizacjπ.
-                    // Kod jest wykomentowany, poniewaø baza demo nie posiada
+                    // Dokumentowi podobnie jak pozycji dokumentu r√≥wnie≈º mo≈ºna
+                    // przypisaƒá dodatkowe cechy zale≈ºne od konfiguracji programu. 
+                    // Przyk≈Çad pokazuje jak ustawiƒá cechƒô z lokalizacjƒÖ.
+                    // Kod jest wykomentowany, poniewa≈º baza demo nie posiada
                     // zdefiniowanej tej cechy.
                     //
                     //dokument.Features["Lokalizacja"] = "AB/12";
 
                     /////////////////////////////////////////////////////////////////
-                    // Po dokonaniu wszystkich operacji na dokumencie moøna ten
-                    // dokument wprowadziÊ (zatwierdziÊ), co powoduje zabezpieczenie 
-                    // przed przypadkowπ edycjπ tego dokumentu oraz przeniesienie go
-                    // do ewidencji dokumentÛw ksiÍgowych.
+                    // Po dokonaniu wszystkich operacji na dokumencie mo≈ºna ten
+                    // dokument wprowadziƒá (zatwierdziƒá), co powoduje zabezpieczenie 
+                    // przed przypadkowƒÖ edycjƒÖ tego dokumentu oraz przeniesienie go
+                    // do ewidencji dokument√≥w ksiƒôgowych.
                     //
                     dokument.Stan = StanDokumentuHandlowego.Zatwierdzony;
 
                     /////////////////////////////////////////////////////////////////
-                    // Wszystkie operacje zosta≥y poprawnie zakoÒczone i zapewne 
-                    // chcemy zatwierdziÊ transakcjÍ sesji.
+                    // Wszystkie operacje zosta≈Çy poprawnie zako≈Ñczone i zapewne 
+                    // chcemy zatwierdziƒá transakcjƒô sesji.
                     //
                     trans.Commit();
                 }
 
                 ////////////////////////////////////////////////////////////////////
-                // Powyøsze operacje by≥y wykonywane na sesji, czyli w pamiÍci.
-                // Teraz naleøy rezultat prac zapisaÊ do bazy danych.
+                // Powy≈ºsze operacje by≈Çy wykonywane na sesji, czyli w pamiƒôci.
+                // Teraz nale≈ºy rezultat prac zapisaƒá do bazy danych.
                 //
                 session.Save();
             }
 
             ////////////////////////////////////////////////////////////////////
-            // I to wszystko. Dokument PZ znajduje siÍ w bazie.
+            // I to wszystko. Dokument PZ znajduje siƒô w bazie.
             //
         }
 
@@ -502,25 +502,25 @@ namespace PrzykladHandel
 
         private void buttonINW_Click(object sender, System.EventArgs e) {
             ///////////////////////////////////////////////////////////////////
-            // Metoda tworzy nowy dokument inwentaryzacji wype≥niajπc go 
-            // przyk≥adowymi pozycjami
+            // Metoda tworzy nowy dokument inwentaryzacji wype≈ÇniajƒÖc go 
+            // przyk≈Çadowymi pozycjami
             //
 
             //////////////////////////////////////////////////////////////////
-            // RozpoczÍcie tworzenia dokumentu (w ogÛle operacji na logice
+            // Rozpoczƒôcie tworzenia dokumentu (w og√≥le operacji na logice
             // biznesowej) polega na utworzeniu obiektu sesji (Session),
-            // w ktÛrym bÍdπ odbywaÊ siÍ poszczegÛlne operacje.
-            // Pierwszy parametr okreúla, czy sesja jest tylko do odczytu
-            // danych, drugi parametr, czy sesja bÍdzie modyfikowaÊ ustawienia
-            // konfiguracyjne (tj definicje dokumentÛw, jednostki, 
+            // w kt√≥rym bƒôdƒÖ odbywaƒá siƒô poszczeg√≥lne operacje.
+            // Pierwszy parametr okre≈õla, czy sesja jest tylko do odczytu
+            // danych, drugi parametr, czy sesja bƒôdzie modyfikowaƒá ustawienia
+            // konfiguracyjne (tj definicje dokument√≥w, jednostki, 
             // definicje cen, itp). Standardowo obydwa parametry dajemy false.
             //
             using (Session session = login.CreateSession(false, false)) {
 
                 //////////////////////////////////////////////////////////////////
-                // Po utworzeniu sesji dobrze jest sobie przygotowaÊ odpowiednie 
-                // zmiene reprezentujπce poszczegÛlne modu≥y programu w tej sesji.
-                // Wystarczy przygotwaÊ tylko te modu≥y, ktÛre bÍdπ nam potrzebne.
+                // Po utworzeniu sesji dobrze jest sobie przygotowaƒá odpowiednie 
+                // zmiene reprezentujƒÖce poszczeg√≥lne modu≈Çy programu w tej sesji.
+                // Wystarczy przygotwaƒá tylko te modu≈Çy, kt√≥re bƒôdƒÖ nam potrzebne.
                 //
                 HandelModule hm = HandelModule.GetInstance(session);
                 TowaryModule tm = TowaryModule.GetInstance(session);
@@ -528,33 +528,33 @@ namespace PrzykladHandel
                 CRMModule cm = CRMModule.GetInstance(session);
 
                 //////////////////////////////////////////////////////////////////
-                // Wszystkie operacje wykonujemy w transakcji sesji, ktÛrπ naleøy
-                // na poczπtku otworzyÊ. W transakcji moøemy wskazaÊ czy bÍdπ 
+                // Wszystkie operacje wykonujemy w transakcji sesji, kt√≥rƒÖ nale≈ºy
+                // na poczƒÖtku otworzyƒá. W transakcji mo≈ºemy wskazaƒá czy bƒôdƒÖ 
                 // robione zmiany w danych.
                 //
                 using (ITransaction trans = session.Logout(true)) {
 
                     //////////////////////////////////////////////////////////////////
-                    // NastÍpnie naleøy utworzyÊ nowy obiekt reprezentujπcy dokument
-                    // handlowy (nag≥Ûwek dokumentu). 
+                    // Nastƒôpnie nale≈ºy utworzyƒá nowy obiekt reprezentujƒÖcy dokument
+                    // handlowy (nag≈Ç√≥wek dokumentu). 
                     //
                     DokumentHandlowy dokument = new DokumentHandlowy();
 		
                     //////////////////////////////////////////////////////////////////
-                    // Nowy dokument naleøy rÛwnieø zwiπzaÊ z definicjπ dokumentu 
+                    // Nowy dokument nale≈ºy r√≥wnie≈º zwiƒÖzaƒá z definicjƒÖ dokumentu 
                     // handlowego. W tym przypadku wyszukujemy definicje wyszukujemy
                     // z kolekcji standardowych definicji.
                     //
                     dokument.Definicja = hm.DefDokHandlowych.Inwentaryzacja;
 
                     /////////////////////////////////////////////////////////////////
-                    // Dokument naleøy teø przypisaÊ do magazynu, do ktÛrego bÍdzie
-                    // przyjmowany towar. Poniøej przypisywany jest standardowy
+                    // Dokument nale≈ºy te≈º przypisaƒá do magazynu, do kt√≥rego bƒôdzie
+                    // przyjmowany towar. Poni≈ºej przypisywany jest standardowy
                     // magazyn programu "Firma".
                     //
                     dokument.Magazyn = mm.Magazyny.Firma;
 				
-                    // Ale moøna wyszukaÊ magazyn np wg symbolu
+                    // Ale mo≈ºna wyszukaƒá magazyn np wg symbolu
                     //dokument.Magazyn = mm.Magazyny.WgSymbol["MAG1"];
 
                     /////////////////////////////////////////////////////////////////
@@ -564,90 +564,90 @@ namespace PrzykladHandel
 
                     /////////////////////////////////////////////////////////////////
                     // PUNKT A ******************************************************
-                    // W kartotece towarÛw wyszukaÊ towar. Przyk≥ad poniøej
+                    // W kartotece towar√≥w wyszukaƒá towar. Przyk≈Çad poni≈ºej
                     // prezentuje wyszukanie towaru wg kodu "Buty"
-                    // Poniewaø w kartotece moøe znajdowaÊ siÍ wiele towarÛw o tym 
+                    // Poniewa≈º w kartotece mo≈ºe znajdowaƒá siƒô wiele towar√≥w o tym 
                     // samym kodzie wybrazy zostanie pierwszy z nich.
                     //
                     Towar towar = (Towar)tm.Towary.WgKodu["Buty"];
                     if (towar!=null) {
                         //////////////////////////////////////////////////////////////
-                        // UtworzyÊ nowy obiekt pozycji dokumentu handlowego, ktÛry
+                        // Utworzyƒá nowy obiekt pozycji dokumentu handlowego, kt√≥ry
                         // zostanie dodany do sescji.
                         //
                         PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
                         hm.PozycjeDokHan.AddRow(pozycja);
 
                         //////////////////////////////////////////////////////////////
-                        // PrzypisaÊ towar do nowo utworzonej pozycji dokumentu, czyli
-                        // wskazaÊ, ktÛry towar ma byÊ przyjÍty do magazynu.
+                        // Przypisaƒá towar do nowo utworzonej pozycji dokumentu, czyli
+                        // wskazaƒá, kt√≥ry towar ma byƒá przyjƒôty do magazynu.
                         //
                         pozycja.Towar = towar;
 
                         //////////////////////////////////////////////////////////////
-                        // W pozycji dokumentu naleøy jeszcze wprowadziÊ iloúÊ
-                        // towaru przyjmowanego na magazyn. IloúÊ reprezentowana jest
-                        // przez liczbÍ 10 bÍdπcπ wartoúciπ iloúci (pierwszy parametr) 
-                        // oraz jednostkÍ opisujπcπ tÍ iloúÊ (drugi parametr). Jeøeli
+                        // W pozycji dokumentu nale≈ºy jeszcze wprowadziƒá ilo≈õƒá
+                        // towaru przyjmowanego na magazyn. Ilo≈õƒá reprezentowana jest
+                        // przez liczbƒô 10 bƒôdƒÖcƒÖ warto≈õciƒÖ ilo≈õci (pierwszy parametr) 
+                        // oraz jednostkƒô opisujƒÖcƒÖ tƒô ilo≈õƒá (drugi parametr). Je≈ºeli
                         // jednostka jest null, to przyjmowana jest jednostka z
                         // karty towarowej.
-                        // Poniøej znajduje siÍ rÛwnieø wykomentowany przyk≥ad, w
-                        // ktÛrym w sposÛb jawny jest wskazanie na jednostkÍ w metrach.
+                        // Poni≈ºej znajduje siƒô r√≥wnie≈º wykomentowany przyk≈Çad, w
+                        // kt√≥rym w spos√≥b jawny jest wskazanie na jednostkƒô w metrach.
                         //
                         pozycja.Ilosc = new Quantity(10, null);
                         // pozycja.Ilosc = new Quantity(10, "m");
 
                         //////////////////////////////////////////////////////////////
-                        // Pozycji dokumentu naleøy rÛwnieø przypisaÊ cenÍ w jakiej
-                        // bÍdzie on wprowadzany do magazynu. (cena zakupu)
-                        // Poniøej przypisywana jest cena w PLN. Dlatego nie jest
-                        // wyspecyfikowany drugi parametr okreúlajπcy walutÍ ceny.
+                        // Pozycji dokumentu nale≈ºy r√≥wnie≈º przypisaƒá cenƒô w jakiej
+                        // bƒôdzie on wprowadzany do magazynu. (cena zakupu)
+                        // Poni≈ºej przypisywana jest cena w PLN. Dlatego nie jest
+                        // wyspecyfikowany drugi parametr okre≈õlajƒÖcy walutƒô ceny.
                         //
                         pozycja.Cena = new DoubleCy(12.34);
 
                         //////////////////////////////////////////////////////////////
-                        // PoszczegÛlnym pozycjπ moøna przypisaÊ rÛwnieø dodatkowe
-                        // cechy, ktÛre zaleøne sπ od konfiguracji programu. Przyk≥ad
-                        // pokazuje jak ustawiÊ cechÍ z numerem beli.
-                        // Kod jest wykomentowany, poniewaø baza demo nie posiada
+                        // Poszczeg√≥lnym pozycjƒÖ mo≈ºna przypisaƒá r√≥wnie≈º dodatkowe
+                        // cechy, kt√≥re zale≈ºne sƒÖ od konfiguracji programu. Przyk≈Çad
+                        // pokazuje jak ustawiƒá cechƒô z numerem beli.
+                        // Kod jest wykomentowany, poniewa≈º baza demo nie posiada
                         // zdefiniowanej tej cechy.
                         //
                         //pozycja.Features["Numer beli"] = "123456";
                     }
 
                     /////////////////////////////////////////////////////////////////
-                    // Jeøeli na dokument ma zawieraÊ wiÍcej pozycji magazynowych
-                    // to naleøy ponownie przejúÊ do PUNKTU A.
+                    // Je≈ºeli na dokument ma zawieraƒá wiƒôcej pozycji magazynowych
+                    // to nale≈ºy ponownie przej≈õƒá do PUNKTU A.
                     //
 
                     /////////////////////////////////////////////////////////////////
-                    // Dokumentowi podobnie jak pozycji dokumentu rÛwnieø moøna
-                    // przypisaÊ dodatkowe cechy zaleøne od konfiguracji programu. 
-                    // Przyk≥ad pokazuje jak ustawiÊ cechÍ z lokalizacjπ.
-                    // Kod jest wykomentowany, poniewaø baza demo nie posiada
+                    // Dokumentowi podobnie jak pozycji dokumentu r√≥wnie≈º mo≈ºna
+                    // przypisaƒá dodatkowe cechy zale≈ºne od konfiguracji programu. 
+                    // Przyk≈Çad pokazuje jak ustawiƒá cechƒô z lokalizacjƒÖ.
+                    // Kod jest wykomentowany, poniewa≈º baza demo nie posiada
                     // zdefiniowanej tej cechy.
                     //
                     //dokument.Features["Lokalizacja"] = "AB/12";
 
                     /////////////////////////////////////////////////////////////////
-                    // Wszystkie operacje zosta≥y poprawnie zakoÒczone i zapewne 
-                    // chcemy zatwierdziÊ transakcjÍ sesji.
+                    // Wszystkie operacje zosta≈Çy poprawnie zako≈Ñczone i zapewne 
+                    // chcemy zatwierdziƒá transakcjƒô sesji.
                     //
                     trans.Commit();
                 }
 
                 ////////////////////////////////////////////////////////////////////
-                // Powyøsze operacje by≥y wykonywane na sesji, czyli w pamiÍci.
-                // Teraz naleøy rezultat prac zapisaÊ do bazy danych.
+                // Powy≈ºsze operacje by≈Çy wykonywane na sesji, czyli w pamiƒôci.
+                // Teraz nale≈ºy rezultat prac zapisaƒá do bazy danych.
                 //
                 session.Save();
             }
 
             ////////////////////////////////////////////////////////////////////
-            // I to wszystko. Dokument inwentaryzacji znajduje siÍ juø w bazie.
-            // Dokument ten znajduje siÍ w buforze, wiÍc øeby stany magazynowe
-            // mog≥y byÊ zmodyfikowane naleøy zatwierdziÊ ten wygenerowany 
-            // w≥aúnie dokument.
+            // I to wszystko. Dokument inwentaryzacji znajduje siƒô ju≈º w bazie.
+            // Dokument ten znajduje siƒô w buforze, wiƒôc ≈ºeby stany magazynowe
+            // mog≈Çy byƒá zmodyfikowane nale≈ºy zatwierdziƒá ten wygenerowany 
+            // w≈Ça≈õnie dokument.
             //
         }
 
@@ -657,8 +657,8 @@ namespace PrzykladHandel
 
         private void buttonKorekta_Click(object sender, System.EventArgs e) {
             ///////////////////////////////////////////////////////////////////
-            // Metoda tworzy dokuemnt korygujπcy do faktury o zadanym ID
-            // Nie umieszczam, ktÛre moøna znaleüÊ w poprzednich przyk≥adach
+            // Metoda tworzy dokuemnt korygujƒÖcy do faktury o zadanym ID
+            // Nie umieszczam, kt√≥re mo≈ºna znale≈∫ƒá w poprzednich przyk≈Çadach
             //
 
             using (Session session = login.CreateSession(false, false)) {
@@ -671,13 +671,13 @@ namespace PrzykladHandel
                 using (ITransaction trans = session.Logout(true)) {
 
                     //////////////////////////////////////////////////////////////////
-                    // WyszukaÊ dokument sprzedaøy o wczeúniej wprowadzonym ID
+                    // Wyszukaƒá dokument sprzeda≈ºy o wcze≈õniej wprowadzonym ID
                     //
                     int id = int.Parse(textID.Text);
                     DokumentHandlowy dokument = hm.DokHandlowe[id];
 		
                     //////////////////////////////////////////////////////////////////
-                    // WyszukaÊ definicjÍ relacji korekty dla danego typu dokumentu
+                    // Wyszukaƒá definicjƒô relacji korekty dla danego typu dokumentu
                     //
                     DefRelacjiKorekta defKorekta =
                         dokument.Definicja.RelacjaKorektyDefinicja as DefRelacjiKorekta;
@@ -685,25 +685,25 @@ namespace PrzykladHandel
                         throw new InvalidOperationException("Dokument "+dokument+" nie ma zdefiniowanej relacji korekty.");
 
                     /////////////////////////////////////////////////////////////////
-                    // UtworzyÊ dokument korekty. Dokument korenty ma byÊ tworzony 
+                    // Utworzyƒá dokument korekty. Dokument korenty ma byƒá tworzony 
                     // zawsze dla pierwszej faktury. Czyli korekta jest robiona dla
                     // "pierwszej" faktury.
                     //
                     DokumentHandlowy korekta = defKorekta.KorygujDokument(dokument);
 				
                     /////////////////////////////////////////////////////////////////
-                    // NastÍpnie moøna zmodyfikowaÊ pozycje na tym dokumencie.
+                    // Nastƒôpnie mo≈ºna zmodyfikowaƒá pozycje na tym dokumencie.
                     //
                     foreach (PozycjaDokHandlowego pozycja in korekta.Pozycje) {
 
                         /////////////////////////////////////////////////////////////////
-                        // Tutaj naleøy dokonaÊ zmian pozycji
+                        // Tutaj nale≈ºy dokonaƒá zmian pozycji
                         //
 
                     }
 
                     /////////////////////////////////////////////////////////////////
-                    // Na koniec moøna dokument zatwierdziÊ.
+                    // Na koniec mo≈ºna dokument zatwierdziƒá.
                     //
 
                     korekta.Stan = StanDokumentuHandlowego.Zatwierdzony;
@@ -720,10 +720,10 @@ namespace PrzykladHandel
         #region Faktura VAT
 
         ///////////////////////////////////////////////////////////////////
-        // Metoda tworzy nowy faktury VAT wype≥niajπc go przyk≥adowymi
+        // Metoda tworzy nowy faktury VAT wype≈ÇniajƒÖc go przyk≈Çadowymi
         // pozycjami.
-        // Robimy to tak samo jak dokument PZ, z tym, øe szukamy definicji FV.
-        // NastÍpnie modyfikujemy p≥atnoúci na przelew lub zap≥acone gotÛwkπ.
+        // Robimy to tak samo jak dokument PZ, z tym, ≈ºe szukamy definicji FV.
+        // Nastƒôpnie modyfikujemy p≈Çatno≈õci na przelew lub zap≈Çacone got√≥wkƒÖ.
         private void buttonPrzelew_Click(object sender, System.EventArgs e) {
             using (Session session = login.CreateSession(false, false)) {
 
@@ -758,89 +758,89 @@ namespace PrzykladHandel
                     }
 
                     ///////////////////////////////////////////////////////////////////
-                    //Modyfikacja p≥atnoúci
-                    //Standradowo dokument ma wygenerowanπ przez system jednπ p≥atnoúÊ. Zmienimy w niej
-                    //sposÛb zap≥aty, domyúlnπ ewidencjÍ oraz termin p≥atnoúci.
-                    //Jeøeli chcemy mieÊ wiÍcej niø jednπ p≥atnoúÊ, to zmniejszamy kwotÍ w instniejπcej
-                    //i dodajemy kolejne p≥atnoúci aø do zrÛwnowaøenia kwoty p≥atnoúci i dokumentu.
-                    //Dodatkowo, jeøeli generujemy p≥atnoúÊ gotÛwkowπ, to dodamy do niej informacjÍ
-                    //o zap≥acieniu i odpowiedni wpis na raport kasowy (musi byÊ za≥oøony 
+                    //Modyfikacja p≈Çatno≈õci
+                    //Standradowo dokument ma wygenerowanƒÖ przez system jednƒÖ p≈Çatno≈õƒá. Zmienimy w niej
+                    //spos√≥b zap≈Çaty, domy≈õlnƒÖ ewidencjƒô oraz termin p≈Çatno≈õci.
+                    //Je≈ºeli chcemy mieƒá wiƒôcej ni≈º jednƒÖ p≈Çatno≈õƒá, to zmniejszamy kwotƒô w instniejƒÖcej
+                    //i dodajemy kolejne p≈Çatno≈õci a≈º do zr√≥wnowa≈ºenia kwoty p≈Çatno≈õci i dokumentu.
+                    //Dodatkowo, je≈ºeli generujemy p≈Çatno≈õƒá got√≥wkowƒÖ, to dodamy do niej informacjƒô
+                    //o zap≈Çacieniu i odpowiedni wpis na raport kasowy (musi byƒá za≈Ço≈ºony 
                     //  i niezatwierdzony)
 
-                    //Wymuszamy przeliczenie zdarzeÒ. W przeciwnym razie sumy mogπ byÊ nieaktualne
+                    //Wymuszamy przeliczenie zdarze≈Ñ. W przeciwnym razie sumy mogƒÖ byƒá nieaktualne
                     //Normalnie robi to za nas UI
                     session.Events.Invoke();
 
                     KasaModule kasa = KasaModule.GetInstance(session);
 
-                    Naleznosc gotÛwka = null;
+                    Naleznosc got√≥wka = null;
                     Naleznosc przelew = null;
-                    //Pobieramy isntniejacπ p≥atnoúÊ. System zrobi≥ na pewno jednπ (o ile wartoúÊ
-                    //dokumentu jest rÛøna od zera).
-                    //Moøemy teø p≥atnoúÊ usunπÊ i odtworzyÊ dok≥adnie tak samo jak to jest 
-                    //robione z dodatkowπ p≥atnoúciπ
-                    Naleznosc p≥atnoúÊ = (Naleznosc)dokument.Platnosci.GetNext();
-                    if (cbGotÛwka.Checked && cbPrzelew.Checked) {
-                        Currency kwota = p≥atnoúÊ.Kwota;
-                        p≥atnoúÊ.Kwota = p≥atnoúÊ.Kwota/2;
-                        gotÛwka = p≥atnoúÊ;
-                        //Tworzymy nowy obiekt naleønoúci
+                    //Pobieramy isntniejacƒÖ p≈Çatno≈õƒá. System zrobi≈Ç na pewno jednƒÖ (o ile warto≈õƒá
+                    //dokumentu jest r√≥≈ºna od zera).
+                    //Mo≈ºemy te≈º p≈Çatno≈õƒá usunƒÖƒá i odtworzyƒá dok≈Çadnie tak samo jak to jest 
+                    //robione z dodatkowƒÖ p≈Çatno≈õciƒÖ
+                    Naleznosc p≈Çatno≈õƒá = (Naleznosc)dokument.Platnosci.GetNext();
+                    if (cbGot√≥wka.Checked && cbPrzelew.Checked) {
+                        Currency kwota = p≈Çatno≈õƒá.Kwota;
+                        p≈Çatno≈õƒá.Kwota = p≈Çatno≈õƒá.Kwota/2;
+                        got√≥wka = p≈Çatno≈õƒá;
+                        //Tworzymy nowy obiekt nale≈ºno≈õci
                         przelew = new Naleznosc(dokument);
                         //Dodajemy go do tabeli Platnosci
                         kasa.Platnosci.AddRow(przelew);
-                        //I ustawiamy kwotÍ
-                        przelew.Kwota = kwota - gotÛwka.Kwota;
+                        //I ustawiamy kwotƒô
+                        przelew.Kwota = kwota - got√≥wka.Kwota;
                     }
-                    else if (cbGotÛwka.Checked)
-                        gotÛwka = p≥atnoúÊ;
+                    else if (cbGot√≥wka.Checked)
+                        got√≥wka = p≈Çatno≈õƒá;
                     else if (cbPrzelew.Checked)
-                        przelew = p≥atnoúÊ;
+                        przelew = p≈Çatno≈õƒá;
 
-                    //Mamy juø potrzebne p≥atnoúci. Teraz musimy im zmodyfikowaÊ sposÛb zap≥aty,
-                    //ewidencjÍ SP oraz termin p≥atnoúci
+                    //Mamy ju≈º potrzebne p≈Çatno≈õci. Teraz musimy im zmodyfikowaƒá spos√≥b zap≈Çaty,
+                    //ewidencjƒô SP oraz termin p≈Çatno≈õci
                     //Najpier przelew
                     if (przelew!=null) {
-                        //Wyszukujemy sposÛb zap≥aty. Na szczÍúcie dla gotÛwki mamy standardowy
-                        //Moøemy teø szukaÊ wg nazwy lub Guid.
+                        //Wyszukujemy spos√≥b zap≈Çaty. Na szczƒô≈õcie dla got√≥wki mamy standardowy
+                        //Mo≈ºemy te≈º szukaƒá wg nazwy lub Guid.
                         przelew.SposobZaplaty = kasa.SposobyZaplaty.Przelew;
 
-                        //Szukamy ewidencjÍ SP.
+                        //Szukamy ewidencjƒô SP.
                         przelew.EwidencjaSP = kasa.EwidencjeSP.WgNazwy["Firmowy rachunek bankowy"];
 
-                        //I termin p≥atnoúci
+                        //I termin p≈Çatno≈õci
                         przelew.TerminDni = 21;
                     }
 
-                    if (gotÛwka!=null) {
-                        //Wyszukujemy sposÛb zap≥aty. Na szczÍúcie dla gotÛwki mamy standardowy
-                        //Moøemy teø szukaÊ wg nazwy lub Guid.
-                        gotÛwka.SposobZaplaty = kasa.SposobyZaplaty.GotÛwka;
+                    if (got√≥wka!=null) {
+                        //Wyszukujemy spos√≥b zap≈Çaty. Na szczƒô≈õcie dla got√≥wki mamy standardowy
+                        //Mo≈ºemy te≈º szukaƒá wg nazwy lub Guid.
+                        got√≥wka.SposobZaplaty = kasa.SposobyZaplaty.Got√≥wka;
 
-                        //Szukamy ewidencjÍ SP.
-                        gotÛwka.EwidencjaSP = kasa.EwidencjeSP.WgNazwy["Kasa gotÛwkowa"];
+                        //Szukamy ewidencjƒô SP.
+                        got√≥wka.EwidencjaSP = kasa.EwidencjeSP.WgNazwy["Kasa got√≥wkowa"];
 
-                        //I termin p≥atnoúci
-                        gotÛwka.TerminDni = 0;
+                        //I termin p≈Çatno≈õci
+                        got√≥wka.TerminDni = 0;
 
-                        //Pozostaje to teraz zap≥aciÊ
-                        //Szukamy raportu kasowego. Musi byÊ istnieÊ i byÊ otwarty lub 
-                        //nie istnieÊ i mieÊ flagÍ automatyczny.
-                        //Oczywiúcie ewidencja SP musi byÊ typu kasa.
-                        RaportESP raport = ((Kasa)gotÛwka.EwidencjaSP).NowyRaport(dokument, dokument.Data);
-                        //Tworzymy nowy dokument wp≥aty
-                        Wplata wp≥ata = new Wplata(dokument, raport);
+                        //Pozostaje to teraz zap≈Çaciƒá
+                        //Szukamy raportu kasowego. Musi byƒá istnieƒá i byƒá otwarty lub 
+                        //nie istnieƒá i mieƒá flagƒô automatyczny.
+                        //Oczywi≈õcie ewidencja SP musi byƒá typu kasa.
+                        RaportESP raport = ((Kasa)got√≥wka.EwidencjaSP).NowyRaport(dokument, dokument.Data);
+                        //Tworzymy nowy dokument wp≈Çaty
+                        Wplata wp≈Çata = new Wplata(dokument, raport);
                         //Dodajemy go do tabeli
-                        kasa.Zaplaty.AddRow(wp≥ata);
-                        //Ustawiamy podmiot (taki jak w naleønoúci)
-                        wp≥ata.Podmiot = dokument.Kontrahent;
-                        //... sposÛb zap≥aty
-                        wp≥ata.SposobZaplaty = gotÛwka.SposobZaplaty;
-                        //... opis wystawrczy zainicjowaÊ, zostanie przeliczony podczas zapisu
-                        wp≥ata.Opis = "?";
-                        //Oraz oczywiúcie kwotÍ.
-                        wp≥ata.Kwota = gotÛwka.Kwota;
+                        kasa.Zaplaty.AddRow(wp≈Çata);
+                        //Ustawiamy podmiot (taki jak w nale≈ºno≈õci)
+                        wp≈Çata.Podmiot = dokument.Kontrahent;
+                        //... spos√≥b zap≈Çaty
+                        wp≈Çata.SposobZaplaty = got√≥wka.SposobZaplaty;
+                        //... opis wystawrczy zainicjowaƒá, zostanie przeliczony podczas zapisu
+                        wp≈Çata.Opis = "?";
+                        //Oraz oczywi≈õcie kwotƒô.
+                        wp≈Çata.Kwota = got√≥wka.Kwota;
 
-                        //Wp≥ata z naleønoúciπ zostanπ rozliczone podczas zatwierdzania dokumentu
+                        //Wp≈Çata z nale≈ºno≈õciƒÖ zostanƒÖ rozliczone podczas zatwierdzania dokumentu
                     }
 
                     //...
@@ -859,25 +859,25 @@ namespace PrzykladHandel
 
         private void buttonRW_Click(object sender, System.EventArgs e) {
             ///////////////////////////////////////////////////////////////////
-            // Metoda tworzy nowy dokument RW wype≥niajπc go przyk≥adowymi
+            // Metoda tworzy nowy dokument RW wype≈ÇniajƒÖc go przyk≈Çadowymi
             // pozycjami
             //
 
             //////////////////////////////////////////////////////////////////
-            // RozpoczÍcie tworzenia dokumentu (w ogÛle operacji na logice
+            // Rozpoczƒôcie tworzenia dokumentu (w og√≥le operacji na logice
             // biznesowej) polega na utworzeniu obiektu sesji (Session),
-            // w ktÛrym bÍdπ odbywaÊ siÍ poszczegÛlne operacje.
-            // Pierwszy parametr okreúla, czy sesja jest tylko do odczytu
-            // danych, drugi parametr, czy sesja bÍdzie modyfikowaÊ ustawienia
-            // konfiguracyjne (tj definicje dokumentÛw, jednostki, 
+            // w kt√≥rym bƒôdƒÖ odbywaƒá siƒô poszczeg√≥lne operacje.
+            // Pierwszy parametr okre≈õla, czy sesja jest tylko do odczytu
+            // danych, drugi parametr, czy sesja bƒôdzie modyfikowaƒá ustawienia
+            // konfiguracyjne (tj definicje dokument√≥w, jednostki, 
             // definicje cen, itp). Standardowo obydwa parametry dajemy false.
             //
             using (Session session = login.CreateSession(false, false)) {
 
                 //////////////////////////////////////////////////////////////////
-                // Po utworzeniu sesji dobrze jest sobie przygotowaÊ odpowiednie 
-                // zmiene reprezentujπce poszczegÛlne modu≥y programu w tej sesji.
-                // Wystarczy przygotwaÊ tylko te modu≥y, ktÛre bÍdπ nam potrzebne.
+                // Po utworzeniu sesji dobrze jest sobie przygotowaƒá odpowiednie 
+                // zmiene reprezentujƒÖce poszczeg√≥lne modu≈Çy programu w tej sesji.
+                // Wystarczy przygotwaƒá tylko te modu≈Çy, kt√≥re bƒôdƒÖ nam potrzebne.
                 //
                 HandelModule hm = HandelModule.GetInstance(session);
                 TowaryModule tm = TowaryModule.GetInstance(session);
@@ -885,20 +885,20 @@ namespace PrzykladHandel
                 CRMModule cm = CRMModule.GetInstance(session);
 
                 //////////////////////////////////////////////////////////////////
-                // Wszystkie operacje wykonujemy w transakcji sesji ktÛrπ naleøy
-                // na poczπtku otworzyÊ. W transakcji moøemy wskazaÊ czy bÍdπ 
+                // Wszystkie operacje wykonujemy w transakcji sesji kt√≥rƒÖ nale≈ºy
+                // na poczƒÖtku otworzyƒá. W transakcji mo≈ºemy wskazaƒá czy bƒôdƒÖ 
                 // robione zmiany w danych.
                 //
                 using (ITransaction trans = session.Logout(true)) {
 
                     //////////////////////////////////////////////////////////////////
-                    // NastÍpnie naleøy utworzyÊ nowy obiekt reprezentujπcy dokument
-                    // handlowy (nag≥Ûwek dokumentu). 
+                    // Nastƒôpnie nale≈ºy utworzyƒá nowy obiekt reprezentujƒÖcy dokument
+                    // handlowy (nag≈Ç√≥wek dokumentu). 
                     //
                     DokumentHandlowy dokument = new DokumentHandlowy();
 		
                     //////////////////////////////////////////////////////////////////
-                    // Nowy dokument nalezy rÛwnieø zwiπzaÊ z definicjπ dokumentu 
+                    // Nowy dokument nalezy r√≥wnie≈º zwiƒÖzaƒá z definicjƒÖ dokumentu 
                     // handlowego. W tym przypadku wyszukujemy definicje wyszukujemy
                     // wg jej symbolu "PZ".
                     //
@@ -908,8 +908,8 @@ namespace PrzykladHandel
                     dokument.Definicja = definicja;
 
                     /////////////////////////////////////////////////////////////////
-                    // Dokument naleøy teø przypisaÊ do magazynu, do ktÛrego bÍdzie
-                    // przyjmowany towar. Poniøej przypisywany jest standardowy
+                    // Dokument nale≈ºy te≈º przypisaƒá do magazynu, do kt√≥rego bƒôdzie
+                    // przyjmowany towar. Poni≈ºej przypisywany jest standardowy
                     // magazyn programu "Firma".
                     //
                     dokument.Magazyn = mm.Magazyny.Firma;
@@ -921,122 +921,122 @@ namespace PrzykladHandel
 
                     /////////////////////////////////////////////////////////////////
                     // PUNKT A ******************************************************
-                    // W kartotece towarÛw wyszukaÊ towar. Przyk≥ad poniøej
+                    // W kartotece towar√≥w wyszukaƒá towar. Przyk≈Çad poni≈ºej
                     // prezentuje wyszukanie towaru wg kodu EAN "2000000000022". 
-                    // Poniewaø w kartotece moøe znajdowaÊ siÍ wiele towarÛw o tym 
+                    // Poniewa≈º w kartotece mo≈ºe znajdowaƒá siƒô wiele towar√≥w o tym 
                     // samym kodzie wybrazy zostanie pierwszy z nich.
                     //
 					Towar towar = tm.Towary.WgKodu["BIKINI"];
                     if (towar!=null) {
                         //////////////////////////////////////////////////////////////
-                        // UtworzyÊ nowy obiekt pozycji dokumentu handlowego, ktÛry
+                        // Utworzyƒá nowy obiekt pozycji dokumentu handlowego, kt√≥ry
                         // zostanie dodany do sescji.
                         //
                         PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
                         hm.PozycjeDokHan.AddRow(pozycja);
 
                         //////////////////////////////////////////////////////////////
-                        // PrzypisaÊ towar do nowo utworzonej pozycji dokumentu, czyli
-                        // wskazaÊ, ktÛry towar ma byÊ wydany z magazynu.
+                        // Przypisaƒá towar do nowo utworzonej pozycji dokumentu, czyli
+                        // wskazaƒá, kt√≥ry towar ma byƒá wydany z magazynu.
                         //
                         pozycja.Towar = towar;
 
                         //////////////////////////////////////////////////////////////
-                        // W pozycji dokumentu naleøy jeszcze wprowadziÊ iloúÊ
-                        // towaru wydawanego z magazynu. IloúÊ reprezentowana jest
-                        // przez liczbÍ 10 bÍdπcπ wartoúciπ iloúci (pierwszy parametr) 
-                        // oraz jednostkÍ opisujπcπ tÍ iloúÊ (drugi parametr). Jeøeli
+                        // W pozycji dokumentu nale≈ºy jeszcze wprowadziƒá ilo≈õƒá
+                        // towaru wydawanego z magazynu. Ilo≈õƒá reprezentowana jest
+                        // przez liczbƒô 10 bƒôdƒÖcƒÖ warto≈õciƒÖ ilo≈õci (pierwszy parametr) 
+                        // oraz jednostkƒô opisujƒÖcƒÖ tƒô ilo≈õƒá (drugi parametr). Je≈ºeli
                         // jednostka jest null, to przyjmowana jest jednostka z
                         // karty towarowej.
-                        // Poniøej znajduje siÍ rÛwnieø wykomentowany przyk≥ad, w
-                        // ktÛrym w sposÛb jawny jest wskazanie na jednostkÍ w metrach.
+                        // Poni≈ºej znajduje siƒô r√≥wnie≈º wykomentowany przyk≈Çad, w
+                        // kt√≥rym w spos√≥b jawny jest wskazanie na jednostkƒô w metrach.
                         //
                         pozycja.Ilosc = new Quantity(10, null);
                         // pozycja.Ilosc = new Quantity(10, "m");
 
                         //////////////////////////////////////////////////////////////
-                        // Pozycji dokumentu naleøy rÛwnieø przypisaÊ cenÍ w jakiej
-                        // bÍdzie on wprowadzany do magazynu. (cena zakupu)
-                        // Poniøej przypisywana jest cena w PLN. Dlatego nie jest
-                        // wyspecyfikowany drugi parametr okreúlajπcy walutÍ ceny.
+                        // Pozycji dokumentu nale≈ºy r√≥wnie≈º przypisaƒá cenƒô w jakiej
+                        // bƒôdzie on wprowadzany do magazynu. (cena zakupu)
+                        // Poni≈ºej przypisywana jest cena w PLN. Dlatego nie jest
+                        // wyspecyfikowany drugi parametr okre≈õlajƒÖcy walutƒô ceny.
                         //
                         pozycja.Cena = new DoubleCy(12.34);
 
                         //////////////////////////////////////////////////////////////
-                        // PoszczegÛlnym pozycjπ moøna przypisaÊ rÛwnieø dodatkowe
-                        // cechy, ktÛre zaleøne sπ od konfiguracji programu. Przyk≥ad
-                        // pokazuje jak ustawiÊ cechÍ z numerem beli.
-                        // Kod jest wykomentowany, poniewaø baza demo nie posiada
+                        // Poszczeg√≥lnym pozycjƒÖ mo≈ºna przypisaƒá r√≥wnie≈º dodatkowe
+                        // cechy, kt√≥re zale≈ºne sƒÖ od konfiguracji programu. Przyk≈Çad
+                        // pokazuje jak ustawiƒá cechƒô z numerem beli.
+                        // Kod jest wykomentowany, poniewa≈º baza demo nie posiada
                         // zdefiniowanej tej cechy.
                         //
                         //pozycja.Features["Numer beli"] = "123456";
                     }
 
                     /////////////////////////////////////////////////////////////////
-                    // Jeøeli na dokument ma zawieraÊ wiÍcej pozycji magazynowych
-                    // to naleøy ponownie przejúÊ do PUNKTU A.
+                    // Je≈ºeli na dokument ma zawieraƒá wiƒôcej pozycji magazynowych
+                    // to nale≈ºy ponownie przej≈õƒá do PUNKTU A.
                     //
 
                     /////////////////////////////////////////////////////////////////
-                    // Dokumentowi podobnie jak pozycji dokumentu rÛwnieø moøna
-                    // przypisaÊ dodatkowe cechy zaleøne od konfiguracji programu. 
-                    // Przyk≥ad pokazuje jak ustawiÊ cechÍ z lokalizacjπ.
-                    // Kod jest wykomentowany, poniewaø baza demo nie posiada
+                    // Dokumentowi podobnie jak pozycji dokumentu r√≥wnie≈º mo≈ºna
+                    // przypisaƒá dodatkowe cechy zale≈ºne od konfiguracji programu. 
+                    // Przyk≈Çad pokazuje jak ustawiƒá cechƒô z lokalizacjƒÖ.
+                    // Kod jest wykomentowany, poniewa≈º baza demo nie posiada
                     // zdefiniowanej tej cechy.
                     //
                     //dokument.Features["Lokalizacja"] = "AB/12";
 
                     /////////////////////////////////////////////////////////////////
-                    // W przypadku tego dokumentu przed zatwierdzeniem naleøy 
-                    // wczeúniej odpaliÊ zdarzenia, ktÛre przeliczπ stany magazynowe.
+                    // W przypadku tego dokumentu przed zatwierdzeniem nale≈ºy 
+                    // wcze≈õniej odpaliƒá zdarzenia, kt√≥re przeliczƒÖ stany magazynowe.
                     session.Events.Invoke();
 
                     /////////////////////////////////////////////////////////////////
-                    // Po dokonaniu wszystkich operacji na dokumencie moøna ten
-                    // dokument wprowadziÊ (zatwierdziÊ), co powoduje zabezpieczenie 
-                    // przed przypadkowπ edycjπ tego dokumentu oraz przeniesienie go
-                    // do ewidencji dokumentÛw ksiÍgowych.
+                    // Po dokonaniu wszystkich operacji na dokumencie mo≈ºna ten
+                    // dokument wprowadziƒá (zatwierdziƒá), co powoduje zabezpieczenie 
+                    // przed przypadkowƒÖ edycjƒÖ tego dokumentu oraz przeniesienie go
+                    // do ewidencji dokument√≥w ksiƒôgowych.
                     //
                     dokument.Stan = StanDokumentuHandlowego.Zatwierdzony;
 
                     /////////////////////////////////////////////////////////////////
-                    // Wszystkie operacje zosta≥y poprawnie zakoÒczone i zapewne 
-                    // chcemy zatwierdziÊ transakcjÍ sesji.
+                    // Wszystkie operacje zosta≈Çy poprawnie zako≈Ñczone i zapewne 
+                    // chcemy zatwierdziƒá transakcjƒô sesji.
                     //
                     trans.Commit();
                 }
 
                 ////////////////////////////////////////////////////////////////////
-                // Powyøsze operacje by≥y wykonywane na sesji, czyli w pamiÍci.
-                // Teraz naleøy rezultat prac zapisaÊ do bazy danych.
+                // Powy≈ºsze operacje by≈Çy wykonywane na sesji, czyli w pamiƒôci.
+                // Teraz nale≈ºy rezultat prac zapisaƒá do bazy danych.
                 //
                 session.Save();
             }
 
             ////////////////////////////////////////////////////////////////////
-            // I to wszystko. Dokument RW znajduje siÍ w bazie.
+            // I to wszystko. Dokument RW znajduje siƒô w bazie.
             //
         }
 
         #endregion
 
-        #region Zak≥adanie karty kontrahenta
+        #region Zak≈Çadanie karty kontrahenta
 
         private void buttonKontrahent_Click(object sender, System.EventArgs e) {
             //
-            // Przed rozpoczÍciem dodawania nowego obiektu biznesowego 
-            // (tj kontrahenta) naleøy tak jak zwykle utworzyÊ obiekt sesji
+            // Przed rozpoczƒôciem dodawania nowego obiektu biznesowego 
+            // (tj kontrahenta) nale≈ºy tak jak zwykle utworzyƒá obiekt sesji
             //
             using (Session session = login.CreateSession(false, false)) {
 
                 //
-                // Do kontrahentÛw wystarczy uzyskaÊ modu≥ CRM, w ktÛrym
-                // znajduje siÍ odpowiednia kolekcja
+                // Do kontrahent√≥w wystarczy uzyskaƒá modu≈Ç CRM, w kt√≥rym
+                // znajduje siƒô odpowiednia kolekcja
                 //
                 CRMModule cm = CRMModule.GetInstance(session);
 
                 //
-                // NastÍpnie przeba otworzyÊ transakcje biznesowπ (nie bazodanowπ)
+                // Nastƒôpnie przeba otworzyƒá transakcje biznesowƒÖ (nie bazodanowƒÖ)
                 // do edycji
                 //
                 using (ITransaction trans = session.Logout(true)) {
@@ -1047,41 +1047,41 @@ namespace PrzykladHandel
                     Kontrahent kontrahent = new Kontrahent();
 
                     //
-                    // NastÍpnie dodajemy pusty obiekt kontrahenta do tabeli. 
+                    // Nastƒôpnie dodajemy pusty obiekt kontrahenta do tabeli. 
                     //
                     cm.Kontrahenci.AddRow(kontrahent);
 					
                     //
-                    // Inicjujemy wymagane pole kod kontrahenta na przypadkowπ wartoúÊ.
-                    // Pole jest unikalne w bazie danych, wieÊ jeøeli kontranhent
-                    // o zadanym kodzie juø istnienie w bazie danych, to podczas podstawiania
-                    // wartoúci do property zostanie wygenerowany wyjπtek.
+                    // Inicjujemy wymagane pole kod kontrahenta na przypadkowƒÖ warto≈õƒá.
+                    // Pole jest unikalne w bazie danych, wieƒá je≈ºeli kontranhent
+                    // o zadanym kodzie ju≈º istnienie w bazie danych, to podczas podstawiania
+                    // warto≈õci do property zostanie wygenerowany wyjƒÖtek.
                     //
                     int nr = new Random().Next(10000);
                     kontrahent.Kod = "KOD"+nr;
 
                     //
-                    // Inicjujemy nazwÍ kontrahenta. To pole nie jest juø unikalne.
+                    // Inicjujemy nazwƒô kontrahenta. To pole nie jest ju≈º unikalne.
                     // 
                     kontrahent.Nazwa = "Nazwa "+nr;
 
                     //
-                    // Inicjujemy pozosta≥e pola, ktÛre chcemy zainicjowaÊ
+                    // Inicjujemy pozosta≈Çe pola, kt√≥re chcemy zainicjowaƒá
                     //
                     kontrahent.NIP = "123-45-67-890";
                     kontrahent.Adres.Ulica = "Szara";
                     kontrahent.Adres.NrDomu = "12";
                     kontrahent.Adres.NrLokalu = "34";
-                    kontrahent.Adres.Miejscowosc = "KrakÛw";
+                    kontrahent.Adres.Miejscowosc = "Krak√≥w";
 			
                     // 
-                    // Zatwierdzamy transakcjÍ biznesowπ
+                    // Zatwierdzamy transakcjƒô biznesowƒÖ
                     //
                     trans.Commit();
                 }
 
                 //
-                // A na koÒcu ca≥oúÊ zapisujemy do bazy danych
+                // A na ko≈Ñcu ca≈Ço≈õƒá zapisujemy do bazy danych
                 //
                 session.Save();
             }
@@ -1089,56 +1089,56 @@ namespace PrzykladHandel
 
         #endregion
 
-        #region Przeglπdanie listy kontrahentÛw
+        #region PrzeglƒÖdanie listy kontrahent√≥w
 
         private void buttonKontrahenci_Click(object sender, System.EventArgs e) {
             //
-            // PrzygotowaÊ zmiennπ do gromadzenia wynikÛw.
+            // Przygotowaƒá zmiennƒÖ do gromadzenia wynik√≥w.
             //
             ArrayList rezultat = new ArrayList();
 
             //
-            // Do przeglπdania obiektÛw w bazie danych wystarczy otworzyÊ sesje
+            // Do przeglƒÖdania obiekt√≥w w bazie danych wystarczy otworzyƒá sesje
             // w trybie read-only, pierwszy parametr true
             //
             using (Session session = login.CreateSession(true, false)) {
 
                 //
-                // Kontrahenci znajdujπ siÍ w module CRM
+                // Kontrahenci znajdujƒÖ siƒô w module CRM
                 //
                 CRMModule cm = CRMModule.GetInstance(session);
 
                 //
-                // NastÍpnie odczytujemy obiekt reprezentujπcy tabele 
-                // wszystkich kontrahentÛw znajdujπcych siÍ w bazie danych.
+                // Nastƒôpnie odczytujemy obiekt reprezentujƒÖcy tabele 
+                // wszystkich kontrahent√≥w znajdujƒÖcych siƒô w bazie danych.
                 //
                 Kontrahenci kontrahenci = cm.Kontrahenci;
 
                 //
-                // Jeøeli chcemy przeglπdnπÊ wszystkich kontrahentÛw to
-                // moøna wykorzystaÊ enumerator w celu ich przeglπdniÍcia.
-                // Przeglπdanie odbywa siÍ wg primary key
-                // Zostanie wyciπgniÍta ma≥o ciekawa statystyka.
+                // Je≈ºeli chcemy przeglƒÖdnƒÖƒá wszystkich kontrahent√≥w to
+                // mo≈ºna wykorzystaƒá enumerator w celu ich przeglƒÖdniƒôcia.
+                // PrzeglƒÖdanie odbywa siƒô wg primary key
+                // Zostanie wyciƒÖgniƒôta ma≈Ço ciekawa statystyka.
                 //
                 int suma = 0;
                 foreach (Kontrahent kontrahent in kontrahenci) {
                     //
-                    // Tutaj moøna umieúciÊ kod przetwarzajπcy kontrahenta.
+                    // Tutaj mo≈ºna umie≈õciƒá kod przetwarzajƒÖcy kontrahenta.
                     //
                     suma += kontrahent.Kod.Length;
                 }
                 rezultat.Add(string.Format(
-                    "Suma d≥ugoúci kodÛw wszystkich kontrahentÛw {0} znakÛw", suma));
+                    "Suma d≈Çugo≈õci kod√≥w wszystkich kontrahent√≥w {0} znak√≥w", suma));
 				
                 //
-                // CzÍúciej zdarza siÍ jednak, øe chcemy wyszukaÊ kontrahentÛw 
-                // spe≥niajπcych pewne warunki, ktÛre najlepiej gdyby liczy≥y siÍ
-                // na serwerze SQL. W tym celu naleøy uzyskaÊ obiekt widoku view.
+                // Czƒô≈õciej zdarza siƒô jednak, ≈ºe chcemy wyszukaƒá kontrahent√≥w 
+                // spe≈ÇniajƒÖcych pewne warunki, kt√≥re najlepiej gdyby liczy≈Çy siƒô
+                // na serwerze SQL. W tym celu nale≈ºy uzyskaƒá obiekt widoku view.
                 //
                 Soneta.Business.View view = kontrahenci.CreateView();
 
                 //
-                // I za≥oøyÊ filtr, np tylko kontrahentÛw, zawierajπcych literkÍ 
+                // I za≈Ço≈ºyƒá filtr, np tylko kontrahent√≥w, zawierajƒÖcych literkƒô 
                 // 's' w nazwie i o kodzie nie !INCYDENTALNY.
                 // Operatory
                 // & to jest AND
@@ -1149,7 +1149,7 @@ namespace PrzykladHandel
                     & ! new FieldCondition.Equal("Kod", "!INCYDENTALNY");
 
                 //
-                // Teraz moøemy przeglπdnπÊ otrzymanπ listÍ
+                // Teraz mo≈ºemy przeglƒÖdnƒÖƒá otrzymanƒÖ listƒô
                 //
                 foreach (Kontrahent kontrahent in view) {
                     rezultat.Add(string.Format("Kod={0}, Nazwa={1}",
@@ -1157,7 +1157,7 @@ namespace PrzykladHandel
                 }
 
                 //
-                // No i wyúwietliÊ okno z rezultatem
+                // No i wy≈õwietliƒá okno z rezultatem
                 //
                 ListaForm form = new ListaForm();
                 form.Lista = rezultat;
@@ -1165,76 +1165,76 @@ namespace PrzykladHandel
                 form.Show();
 
                 //
-                // Oczywiúcie Session.Save na koÒcu nie jest potrzebny, bo nie 
-                // zmieniliúmy nic w bazie.
+                // Oczywi≈õcie Session.Save na ko≈Ñcu nie jest potrzebny, bo nie 
+                // zmienili≈õmy nic w bazie.
                 //
             }
         }
 
         #endregion
 
-        #region Przeglπdanie listy towarÛw
+        #region PrzeglƒÖdanie listy towar√≥w
 
         private void buttonTowary_Click(object sender, System.EventArgs e) {
             //
-            // PrzygotowaÊ zmiennπ do gromadzenia wynikÛw.
+            // Przygotowaƒá zmiennƒÖ do gromadzenia wynik√≥w.
             //
             ArrayList rezultat = new ArrayList();
 
             //
-            // Do przeglπdania obiektÛw w bazie danych wystarczy otworzyÊ sesje
+            // Do przeglƒÖdania obiekt√≥w w bazie danych wystarczy otworzyƒá sesje
             // w trybie read-only, pierwszy parametr true
             //
             using (Session session = login.CreateSession(true, false)) {
 
                 //
-                // Towary znajdujπ siÍ w module Towary, ale kontrahenci
-                // teø siÍ przydadzπ.
+                // Towary znajdujƒÖ siƒô w module Towary, ale kontrahenci
+                // te≈º siƒô przydadzƒÖ.
                 //
                 CRMModule cm = CRMModule.GetInstance(session);
                 TowaryModule tm = TowaryModule.GetInstance(session);
 
                 //
-                // NastÍpnie odczytujemy obiekt reprezentujπcy tabele 
-                // wszystkich towarÛw znajdujπcych siÍ w bazie danych.
+                // Nastƒôpnie odczytujemy obiekt reprezentujƒÖcy tabele 
+                // wszystkich towar√≥w znajdujƒÖcych siƒô w bazie danych.
                 //
                 Towary towary = tm.Towary;
 
                 //
-                // Jeøeli chcemy przeglπdnπÊ wszystkich towarÛw to
-                // moøna wykorzystaÊ enumerator w celu ich przeglπdniÍcia.
-                // Przeglπdanie bÍdzie odbywaÊ siÍ wg nazwy towaru. 
-                // Zostanie wyciπgniÍta ma≥o ciekawa statystyka.
+                // Je≈ºeli chcemy przeglƒÖdnƒÖƒá wszystkich towar√≥w to
+                // mo≈ºna wykorzystaƒá enumerator w celu ich przeglƒÖdniƒôcia.
+                // PrzeglƒÖdanie bƒôdzie odbywaƒá siƒô wg nazwy towaru. 
+                // Zostanie wyciƒÖgniƒôta ma≈Ço ciekawa statystyka.
                 //
                 int suma = 0;
                 foreach (Towar towar in towary.WgNazwy) {
                     //
-                    // Tutaj moøna umieúciÊ kod przetwarzajπcy towar.
+                    // Tutaj mo≈ºna umie≈õciƒá kod przetwarzajƒÖcy towar.
                     //
                     suma += towar.Nazwa.Length;
                 }
                 rezultat.Add(string.Format(
-                    "Suma d≥ugoúci nazw wszystkich towarÛw {0} znakÛw", suma));
+                    "Suma d≈Çugo≈õci nazw wszystkich towar√≥w {0} znak√≥w", suma));
 
                 //
-                // CzÍúciej zdarza siÍ jednak, øe chcemy wyszukaÊ towary
-                // spe≥niajπce pewne warunki, ktÛre najlepiej gdyby liczy≥y siÍ
-                // na serwerze SQL. W tym celu naleøy uzyskaÊ obiekt widoku view.
+                // Czƒô≈õciej zdarza siƒô jednak, ≈ºe chcemy wyszukaƒá towary
+                // spe≈ÇniajƒÖce pewne warunki, kt√≥re najlepiej gdyby liczy≈Çy siƒô
+                // na serwerze SQL. W tym celu nale≈ºy uzyskaƒá obiekt widoku view.
                 //
                 Soneta.Business.View view = towary.CreateView();
 
                 //
-                // I za≥oøyÊ filtr, np tylko towary o cesze 'Kolor' 
-                // rÛwniej wartoúci 'Czerwony'. Warunek zak≥adany jest wÛwczas
-                // gdy cecha 'Kolor' w ogÛle istnieje.
+                // I za≈Ço≈ºyƒá filtr, np tylko towary o cesze 'Kolor' 
+                // r√≥wniej warto≈õci 'Czerwony'. Warunek zak≈Çadany jest w√≥wczas
+                // gdy cecha 'Kolor' w og√≥le istnieje.
                 //
                 if (towary.FeatureDefinitions.Contains("Kolor"))
                     view.Condition &= new FieldCondition.Equal("Features.Kolor", "Czerwony");
 
                 //
-                // Moøna rÛwnieø zak≥adaÊ warunki na pola bÍdπce referencjami
-                // do innych obiektÛw.
-                // Do≥Ûømy jeszcze warunek, dla towarÛw pochodzπcych od dostawcy
+                // Mo≈ºna r√≥wnie≈º zak≈Çadaƒá warunki na pola bƒôdƒÖce referencjami
+                // do innych obiekt√≥w.
+                // Do≈Ç√≥≈ºmy jeszcze warunek, dla towar√≥w pochodzƒÖcych od dostawcy
                 // 'ABC', o ile taki kontrahent istnieje w bazie.
                 //
                 Kontrahent kontrahentABC = cm.Kontrahenci.WgKodu["ABC"];
@@ -1242,7 +1242,7 @@ namespace PrzykladHandel
                     view.Condition &= new FieldCondition.Equal("Dostawca", kontrahentABC);
 
                 //
-                // Teraz moøemy przeglπdnπÊ otrzymanπ listÍ
+                // Teraz mo≈ºemy przeglƒÖdnƒÖƒá otrzymanƒÖ listƒô
                 //
                 foreach (Towar towar in view) {
                     rezultat.Add(string.Format("Kod={0}, Nazwa={1}",
@@ -1250,7 +1250,7 @@ namespace PrzykladHandel
                 }
 
                 //
-                // No i wyúwietliÊ okno z rezultatem
+                // No i wy≈õwietliƒá okno z rezultatem
                 //
                 ListaForm form = new ListaForm();
                 form.Lista = rezultat;
@@ -1258,8 +1258,8 @@ namespace PrzykladHandel
                 form.Show();
 
                 //
-                // Oczywiúcie Session.Save na koÒcu nie jest potrzebny, bo nie 
-                // zmieniliúmy nic w bazie.
+                // Oczywi≈õcie Session.Save na ko≈Ñcu nie jest potrzebny, bo nie 
+                // zmienili≈õmy nic w bazie.
                 //
             }
         }
@@ -1270,23 +1270,23 @@ namespace PrzykladHandel
 
         private void buttonPZZK_Click(object sender, System.EventArgs e) {
             //
-            // Do poprawnego dzia≥ania tej funkcji konieczne jest zdefiniowanie
-            // obiegu dokumentÛw polegajπcego na wprowadzaniu dokumentu PZ
-            // a potem rÍcznym generowaniu faktury zakupu ZK.
+            // Do poprawnego dzia≈Çania tej funkcji konieczne jest zdefiniowanie
+            // obiegu dokument√≥w polegajƒÖcego na wprowadzaniu dokumentu PZ
+            // a potem rƒôcznym generowaniu faktury zakupu ZK.
             //
-            // Metoda demonstruje sposÛb generowania dokumentu podrzÍdnego 
+            // Metoda demonstruje spos√≥b generowania dokumentu podrzƒôdnego 
             // relacji do innego dokumentu
             //
 
             //
-            // Standardowo, otwieramy sesjÍ
+            // Standardowo, otwieramy sesjƒô
             //
             using (Session session = login.CreateSession(false, false)) {
 
                 //
-                // Po utworzeniu sesji dobrze jest sobie przygotowaÊ odpowiednie 
-                // zmiene reprezentujπce poszczegÛlne modu≥y programu w tej sesji.
-                // Wystarczy przygotwaÊ tylko te modu≥y, ktÛre bÍdπ nam potrzebne.
+                // Po utworzeniu sesji dobrze jest sobie przygotowaƒá odpowiednie 
+                // zmiene reprezentujƒÖce poszczeg√≥lne modu≈Çy programu w tej sesji.
+                // Wystarczy przygotwaƒá tylko te modu≈Çy, kt√≥re bƒôdƒÖ nam potrzebne.
                 //
                 HandelModule hm = HandelModule.GetInstance(session);
                 TowaryModule tm = TowaryModule.GetInstance(session);
@@ -1294,8 +1294,8 @@ namespace PrzykladHandel
                 CRMModule cm = CRMModule.GetInstance(session);
 
                 //
-                // Wszystkie operacje wykonujemy w transakcji sesji ktÛrπ naleøy
-                // na poczπtku otworzyÊ. W transakcji moøemy wskazaÊ czy bÍdπ 
+                // Wszystkie operacje wykonujemy w transakcji sesji kt√≥rƒÖ nale≈ºy
+                // na poczƒÖtku otworzyƒá. W transakcji mo≈ºemy wskazaƒá czy bƒôdƒÖ 
                 // robione zmiany w danych.
                 //
                 using (ITransaction trans = session.Logout(true)) {
@@ -1309,14 +1309,14 @@ namespace PrzykladHandel
                         throw new InvalidOperationException("Nieznaleziona definicja dokumentu PZ i/lub ZK.");
 
                     //
-                    // Wyszukujemy dokument PZ, z ktÛrego ma byÊ utworzona faktura.
+                    // Wyszukujemy dokument PZ, z kt√≥rego ma byƒá utworzona faktura.
                     //
                     DokumentHandlowy dokumentPZ = hm.DokHandlowe.NumerWgNumeruDokumentu["PZ/000001/05"];
                     if (dokumentPZ==null)
                         throw new InvalidOperationException("Konieczne jest wprowadzenie dokumentu PZ/000001/05.");
 
                     //
-                    // Wyszukujemy definicjÍ relacji handlowej PZ->ZK
+                    // Wyszukujemy definicjƒô relacji handlowej PZ->ZK
                     //
                     DefRelacjiMagazynowa defRelPZZK = null;
                     foreach (DefRelacjiHandlowej defRel in definicjaPZ.Podrzedne) {
@@ -1329,53 +1329,53 @@ namespace PrzykladHandel
                         throw new InvalidOperationException("Nieznaleziona definicja relacji PZ->ZK.");
 
                     //
-                    // Alternatywny, szybki sposÛb znalezienia tej szczegÛlnej definicji
-                    // relacji (czyli to co wyøej tylko proúciej).
+                    // Alternatywny, szybki spos√≥b znalezienia tej szczeg√≥lnej definicji
+                    // relacji (czyli to co wy≈ºej tylko pro≈õciej).
                     //
                     defRelPZZK = (DefRelacjiMagazynowa)hm.DefRelHandlowych.PZFZ;
                     if (defRelPZZK==null)
                         throw new InvalidOperationException("Nieznaleziona definicja relacji PZ->ZK.");
 
                     //
-                    // UtworzuÊ obiekt context, ktÛry bÍdzie potrzebny
+                    // Utworzuƒá obiekt context, kt√≥ry bƒôdzie potrzebny
                     //
                     Context cx = Context.Empty.Clone(session);
 
                     //
-                    // UtworzyÊ dokument podrzÍdny ZK
+                    // Utworzyƒá dokument podrzƒôdny ZK
                     //
                     DokumentDocelowy dd = new DokumentDocelowy(dokumentPZ, defRelPZZK, false, cx);
                     DokumentHandlowy dokumentZK = defRelPZZK.GenerujNowy(dokumentPZ, dd);
 
                     //
-                    // Wszystkie operacje zosta≥y poprawnie zakoÒczone i zapewne 
-                    // chcemy zatwierdziÊ transakcjÍ sesji.
+                    // Wszystkie operacje zosta≈Çy poprawnie zako≈Ñczone i zapewne 
+                    // chcemy zatwierdziƒá transakcjƒô sesji.
                     //
                     trans.Commit();
                 }
 
                 ////////////////////////////////////////////////////////////////////
-                // Powyøsze operacje by≥y wykonywane na sesji, czyli w pamiÍci.
-                // Teraz naleøy rezultat prac zapisaÊ do bazy danych.
+                // Powy≈ºsze operacje by≈Çy wykonywane na sesji, czyli w pamiƒôci.
+                // Teraz nale≈ºy rezultat prac zapisaƒá do bazy danych.
                 //
                 session.Save();
             }
 
             //
-            // I to wszystko. Dokument ZK znajduje siÍ w bazie.
+            // I to wszystko. Dokument ZK znajduje siƒô w bazie.
             //
         }
 
         #endregion
 
-        #region Generowanie raportu kasowego dla ewidencji Kasa GotÛwkowa
+        #region Generowanie raportu kasowego dla ewidencji Kasa Got√≥wkowa
 
         private void buttonRaport_Click(object sender, System.EventArgs e) {
             using (Session session = login.CreateSession(false, false)) {
                 KasaModule kasa = KasaModule.GetInstance(session);
                 RaportESP raport = (RaportESP)kasa.RaportyESP.WgKasa[kasa.EwidencjeSP.Kasa, Date.Today, 1];
                 if (raport!=null) 
-                    throw new InvalidOperationException("Raport zosta≥ juø za≥oøony");
+                    throw new InvalidOperationException("Raport zosta≈Ç ju≈º za≈Ço≈ºony");
 
                 using (ITransaction t = session.Logout(true)) {
                     raport = new RaportESP(kasa.EwidencjeSP.Kasa, new FromTo(Date.Today, Date.Today));
@@ -1388,9 +1388,9 @@ namespace PrzykladHandel
 
         #endregion
 
-        #region Nowa wp≥ata do ewidencji Kasa GotÛwkowa
+        #region Nowa wp≈Çata do ewidencji Kasa Got√≥wkowa
 
-        private void buttonWp≥ata_Click(object sender, System.EventArgs e) {
+        private void buttonWp≈Çata_Click(object sender, System.EventArgs e) {
             using (Session session = login.CreateSession(false, false)) {
                 KasaModule kasa = KasaModule.GetInstance(session);
                 CRMModule crm = CRMModule.GetInstance(session);
@@ -1404,14 +1404,14 @@ namespace PrzykladHandel
                     throw new InvalidOperationException("Nieznaleziony kontrahent o kodzie ABC.");
 
                 using (ITransaction t = session.Logout(true)) {
-                    DokumentWplata wp≥ata = new DokumentWplata(raport);
-                    kasa.DokumentyKasowe.AddRow(wp≥ata);
-                    if (!wp≥ata.IsReadOnlyData())
-                        wp≥ata.Data = Date.Today;
-                    wp≥ata.Zaplata.Podmiot = kontrahent;
-                    wp≥ata.Zaplata.Kwota = new Currency(100.0m, "PLN");
-                    wp≥ata.Zaplata.Opis = "Wp≥ata do kasy";
-                    wp≥ata.Zatwierdzony = true;
+                    DokumentWplata wp≈Çata = new DokumentWplata(raport);
+                    kasa.DokumentyKasowe.AddRow(wp≈Çata);
+                    if (!wp≈Çata.IsReadOnlyData())
+                        wp≈Çata.Data = Date.Today;
+                    wp≈Çata.Zaplata.Podmiot = kontrahent;
+                    wp≈Çata.Zaplata.Kwota = new Currency(100.0m, "PLN");
+                    wp≈Çata.Zaplata.Opis = "Wp≈Çata do kasy";
+                    wp≈Çata.Zatwierdzony = true;
                     t.Commit();
                 }
                 session.Save();
@@ -1420,7 +1420,7 @@ namespace PrzykladHandel
 
         #endregion 
 
-        #region Rozliczenie wp≥aty i naleønoúci dla kontrahenta ABC
+        #region Rozliczenie wp≈Çaty i nale≈ºno≈õci dla kontrahenta ABC
 
         private void buttonRozliczenie_Click(object sender, System.EventArgs e) {
             using (Session session = login.CreateSession(false, false)) {
@@ -1431,24 +1431,24 @@ namespace PrzykladHandel
                 if (kontrahent==null) 
                     throw new InvalidOperationException("Nieznaleziony kontrahent o kodzie ABC.");
 
-                Wplata wp≥ata = null;
-                Naleznosc naleønoúÊ = null;
+                Wplata wp≈Çata = null;
+                Naleznosc nale≈ºno≈õƒá = null;
 
                 SubTable st = kasa.RozrachunkiIdx.WgPodmiot[kontrahent, Date.MaxValue];
                 foreach (RozrachunekIdx idx in st) {
-                    if (idx.Typ==TypRozrachunku.Wp≥ata && wp≥ata==null)
-                        wp≥ata = (Wplata)idx.Dokument;
-                    if (idx.Typ==TypRozrachunku.NaleønoúÊ && naleønoúÊ==null)
-                        naleønoúÊ = (Naleznosc)idx.Dokument;
-                    if (wp≥ata!=null && naleønoúÊ!=null)
+                    if (idx.Typ==TypRozrachunku.Wp≈Çata && wp≈Çata==null)
+                        wp≈Çata = (Wplata)idx.Dokument;
+                    if (idx.Typ==TypRozrachunku.Nale≈ºno≈õƒá && nale≈ºno≈õƒá==null)
+                        nale≈ºno≈õƒá = (Naleznosc)idx.Dokument;
+                    if (wp≈Çata!=null && nale≈ºno≈õƒá!=null)
                         break;
                 }
 
-                if (wp≥ata==null || naleønoúÊ==null)
-                    throw new InvalidOperationException("Nieznalezione wp≥ata lub naleønoúÊ od kontrahenta ABC");
+                if (wp≈Çata==null || nale≈ºno≈õƒá==null)
+                    throw new InvalidOperationException("Nieznalezione wp≈Çata lub nale≈ºno≈õƒá od kontrahenta ABC");
 
                 using (ITransaction t = session.Logout(true)) {
-                    RozliczenieSP rozliczenie = new RozliczenieSP(naleønoúÊ, wp≥ata);
+                    RozliczenieSP rozliczenie = new RozliczenieSP(nale≈ºno≈õƒá, wp≈Çata);
                     kasa.RozliczeniaSP.AddRow(rozliczenie);
                     t.Commit();
                 }
@@ -1458,7 +1458,7 @@ namespace PrzykladHandel
 
         #endregion
 
-			#region Generowanie ewidencji sprzedaøy dla kontrahenta ABC
+			#region Generowanie ewidencji sprzeda≈ºy dla kontrahenta ABC
 
 			private void buttonEwidencjaSprzedazy_Click(object sender, System.EventArgs e) {
 				using (Session session = login.CreateSession(false, false)) {
@@ -1472,7 +1472,7 @@ namespace PrzykladHandel
 						throw new InvalidOperationException("Nieznaleziony kontrahent o kodzie ABC.");
 
 					using (ITransaction t = session.Logout(true)) {
-						//utowrzenie ewidencji sprzedaøy i dodanie do tabeli ewidencji
+						//utowrzenie ewidencji sprzeda≈ºy i dodanie do tabeli ewidencji
 						SprzedazEwidencja ewidencja = new SprzedazEwidencja();
 						core.DokEwidencja.AddRow(ewidencja);
 
@@ -1484,15 +1484,15 @@ namespace PrzykladHandel
 						//ustawienie numeru dokumentu, podmiotu i opisu
 						ewidencja.NumerDokumentu = "FV/2007/123456";
 						ewidencja.Podmiot = kontrahent;
-						ewidencja.Opis = "Faktura sprzedaøy";
+						ewidencja.Opis = "Faktura sprzeda≈ºy";
 
-						//dodanie elementÛw VAT
+						//dodanie element√≥w VAT
 						ElemEwidencjiVATSprzedaz elemVAT = new ElemEwidencjiVATSprzedaz(ewidencja);
 						vat.EleEwidencjiVATT.AddRow(elemVAT);
 						elemVAT.DefinicjaStawki = core.DefStawekVat[StatusStawkiVat.Opodatkowana, new Percent(0.22m), false];
 						elemVAT.Netto = 1000m;
 
-						//P≥atnoúci generujπ siÍ automatycznie po kaødej zmianie wartoúci ewidencji
+						//P≈Çatno≈õci generujƒÖ siƒô automatycznie po ka≈ºdej zmianie warto≈õci ewidencji
 
 						// dodanie opisu analitycznego
 						ElementOpisuEwidencji elemOpisu = new ElementOpisuEwidencji(ewidencja);
