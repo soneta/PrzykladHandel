@@ -1,23 +1,24 @@
+using Soneta.Business;
+using Soneta.Business.App;
+using Soneta.Core;
+using Soneta.CRM;
+using Soneta.EwidencjaVat;
+using Soneta.Handel;
+using Soneta.Handel.RelacjeDokumentow.Api;
+using Soneta.Kasa;
+using Soneta.Ksiega;
+using Soneta.Magazyny;
+using Soneta.Towary;
+using Soneta.Types;
 using System;
 using System.Collections;
 using System.Windows.Forms;
-using Soneta.Types;
-using Soneta.Business;
-using Soneta.Business.App;
-using Soneta.Towary;
-using Soneta.Handel;
-using Soneta.Magazyny;
-using Soneta.CRM;
-using Soneta.Kasa;
-using Soneta.Core;
-using Soneta.EwidencjaVat;
-using Soneta.Ksiega;
 
 namespace PrzykladHandel
 {
-	/// <summary>
-	/// Summary description for Form1.
-	/// </summary>
+    /// <summary>
+    /// Summary description for Form1.
+    /// </summary>
     public class Form1 : System.Windows.Forms.Form {
         /// <summary>
         /// Required designer variable.
@@ -57,207 +58,207 @@ namespace PrzykladHandel
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-					this.buttonPZ = new System.Windows.Forms.Button();
-					this.buttonINW = new System.Windows.Forms.Button();
-					this.buttonKorekta = new System.Windows.Forms.Button();
-					this.textID = new System.Windows.Forms.TextBox();
-					this.buttonPrzelew = new System.Windows.Forms.Button();
-					this.cbGotówka = new System.Windows.Forms.CheckBox();
-					this.cbPrzelew = new System.Windows.Forms.CheckBox();
-					this.buttonRW = new System.Windows.Forms.Button();
-					this.buttonKontrahent = new System.Windows.Forms.Button();
-					this.buttonKontrahenci = new System.Windows.Forms.Button();
-					this.buttonTowary = new System.Windows.Forms.Button();
-					this.buttonPZZK = new System.Windows.Forms.Button();
-					this.buttonRaport = new System.Windows.Forms.Button();
-					this.buttonWpłata = new System.Windows.Forms.Button();
-					this.buttonRozliczenie = new System.Windows.Forms.Button();
-					this.buttonEwidencjaSprzedazy = new System.Windows.Forms.Button();
-					this.SuspendLayout();
-					// 
-					// buttonPZ
-					// 
-					this.buttonPZ.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonPZ.Location = new System.Drawing.Point(12, 12);
-					this.buttonPZ.Name = "buttonPZ";
-					this.buttonPZ.Size = new System.Drawing.Size(164, 48);
-					this.buttonPZ.TabIndex = 0;
-					this.buttonPZ.Text = "Generowanie dokumentu PZ";
-					this.buttonPZ.Click += new System.EventHandler(this.buttonPZ_Click);
-					// 
-					// buttonINW
-					// 
-					this.buttonINW.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonINW.Location = new System.Drawing.Point(12, 132);
-					this.buttonINW.Name = "buttonINW";
-					this.buttonINW.Size = new System.Drawing.Size(164, 48);
-					this.buttonINW.TabIndex = 2;
-					this.buttonINW.Text = "Generowanie dokumentu Inwentaryzacji";
-					this.buttonINW.Click += new System.EventHandler(this.buttonINW_Click);
-					// 
-					// buttonKorekta
-					// 
-					this.buttonKorekta.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonKorekta.Location = new System.Drawing.Point(12, 192);
-					this.buttonKorekta.Name = "buttonKorekta";
-					this.buttonKorekta.Size = new System.Drawing.Size(164, 44);
-					this.buttonKorekta.TabIndex = 3;
-					this.buttonKorekta.Text = "Korekta sprzedaży dokumentu o zadanym ID";
-					this.buttonKorekta.Click += new System.EventHandler(this.buttonKorekta_Click);
-					// 
-					// textID
-					// 
-					this.textID.Location = new System.Drawing.Point(204, 204);
-					this.textID.Name = "textID";
-					this.textID.Size = new System.Drawing.Size(76, 20);
-					this.textID.TabIndex = 6;
-					this.textID.Text = "18";
-					// 
-					// buttonPrzelew
-					// 
-					this.buttonPrzelew.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonPrzelew.Location = new System.Drawing.Point(12, 248);
-					this.buttonPrzelew.Name = "buttonPrzelew";
-					this.buttonPrzelew.Size = new System.Drawing.Size(164, 44);
-					this.buttonPrzelew.TabIndex = 4;
-					this.buttonPrzelew.Text = "Faktura sprzedaży";
-					this.buttonPrzelew.Click += new System.EventHandler(this.buttonPrzelew_Click);
-					// 
-					// cbGotówka
-					// 
-					this.cbGotówka.Checked = true;
-					this.cbGotówka.CheckState = System.Windows.Forms.CheckState.Checked;
-					this.cbGotówka.Location = new System.Drawing.Point(200, 252);
-					this.cbGotówka.Name = "cbGotówka";
-					this.cbGotówka.Size = new System.Drawing.Size(128, 24);
-					this.cbGotówka.TabIndex = 7;
-					this.cbGotówka.Text = "Zapłacono gotówką";
-					// 
-					// cbPrzelew
-					// 
-					this.cbPrzelew.Checked = true;
-					this.cbPrzelew.CheckState = System.Windows.Forms.CheckState.Checked;
-					this.cbPrzelew.Location = new System.Drawing.Point(200, 276);
-					this.cbPrzelew.Name = "cbPrzelew";
-					this.cbPrzelew.Size = new System.Drawing.Size(116, 24);
-					this.cbPrzelew.TabIndex = 8;
-					this.cbPrzelew.Text = "Na przelew 21 dni";
-					// 
-					// buttonRW
-					// 
-					this.buttonRW.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonRW.Location = new System.Drawing.Point(12, 72);
-					this.buttonRW.Name = "buttonRW";
-					this.buttonRW.Size = new System.Drawing.Size(164, 48);
-					this.buttonRW.TabIndex = 1;
-					this.buttonRW.Text = "Generowanie dokumentu RW";
-					this.buttonRW.Click += new System.EventHandler(this.buttonRW_Click);
-					// 
-					// buttonKontrahent
-					// 
-					this.buttonKontrahent.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonKontrahent.Location = new System.Drawing.Point(188, 12);
-					this.buttonKontrahent.Name = "buttonKontrahent";
-					this.buttonKontrahent.Size = new System.Drawing.Size(164, 48);
-					this.buttonKontrahent.TabIndex = 5;
-					this.buttonKontrahent.Text = "Zakładanie karty kontrahenta";
-					this.buttonKontrahent.Click += new System.EventHandler(this.buttonKontrahent_Click);
-					// 
-					// buttonKontrahenci
-					// 
-					this.buttonKontrahenci.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonKontrahenci.Location = new System.Drawing.Point(12, 304);
-					this.buttonKontrahenci.Name = "buttonKontrahenci";
-					this.buttonKontrahenci.Size = new System.Drawing.Size(164, 44);
-					this.buttonKontrahenci.TabIndex = 4;
-					this.buttonKontrahenci.Text = "Filtrowana lista kontrahentów";
-					this.buttonKontrahenci.Click += new System.EventHandler(this.buttonKontrahenci_Click);
-					// 
-					// buttonTowary
-					// 
-					this.buttonTowary.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonTowary.Location = new System.Drawing.Point(12, 360);
-					this.buttonTowary.Name = "buttonTowary";
-					this.buttonTowary.Size = new System.Drawing.Size(164, 44);
-					this.buttonTowary.TabIndex = 4;
-					this.buttonTowary.Text = "Filtrowana lista towarów";
-					this.buttonTowary.Click += new System.EventHandler(this.buttonTowary_Click);
-					// 
-					// buttonPZZK
-					// 
-					this.buttonPZZK.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonPZZK.Location = new System.Drawing.Point(188, 72);
-					this.buttonPZZK.Name = "buttonPZZK";
-					this.buttonPZZK.Size = new System.Drawing.Size(164, 48);
-					this.buttonPZZK.TabIndex = 0;
-					this.buttonPZZK.Text = "Generowanie z dokumentu PZ dokumentu ZK";
-					this.buttonPZZK.Click += new System.EventHandler(this.buttonPZZK_Click);
-					// 
-					// buttonRaport
-					// 
-					this.buttonRaport.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonRaport.Location = new System.Drawing.Point(360, 12);
-					this.buttonRaport.Name = "buttonRaport";
-					this.buttonRaport.Size = new System.Drawing.Size(164, 48);
-					this.buttonRaport.TabIndex = 5;
-					this.buttonRaport.Text = "Generowanie raportu kasowego";
-					this.buttonRaport.Click += new System.EventHandler(this.buttonRaport_Click);
-					// 
-					// buttonWpłata
-					// 
-					this.buttonWpłata.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonWpłata.Location = new System.Drawing.Point(360, 72);
-					this.buttonWpłata.Name = "buttonWpłata";
-					this.buttonWpłata.Size = new System.Drawing.Size(164, 48);
-					this.buttonWpłata.TabIndex = 5;
-					this.buttonWpłata.Text = "Generowanie wpłaty";
-					this.buttonWpłata.Click += new System.EventHandler(this.buttonWpłata_Click);
-					// 
-					// buttonRozliczenie
-					// 
-					this.buttonRozliczenie.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonRozliczenie.Location = new System.Drawing.Point(360, 132);
-					this.buttonRozliczenie.Name = "buttonRozliczenie";
-					this.buttonRozliczenie.Size = new System.Drawing.Size(164, 48);
-					this.buttonRozliczenie.TabIndex = 5;
-					this.buttonRozliczenie.Text = "Rozliczenie faktury";
-					this.buttonRozliczenie.Click += new System.EventHandler(this.buttonRozliczenie_Click);
-					// 
-					// buttonEwidencjaSprzedazy
-					// 
-					this.buttonEwidencjaSprzedazy.FlatStyle = System.Windows.Forms.FlatStyle.System;
-					this.buttonEwidencjaSprzedazy.Location = new System.Drawing.Point(360, 190);
-					this.buttonEwidencjaSprzedazy.Name = "buttonEwidencjaSprzedazy";
-					this.buttonEwidencjaSprzedazy.Size = new System.Drawing.Size(164, 48);
-					this.buttonEwidencjaSprzedazy.TabIndex = 9;
-					this.buttonEwidencjaSprzedazy.Text = "Ewidencja sprzedaży";
-					this.buttonEwidencjaSprzedazy.Click += new System.EventHandler(this.buttonEwidencjaSprzedazy_Click);
-					// 
-					// Form1
-					// 
-					this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-					this.ClientSize = new System.Drawing.Size(532, 418);
-					this.Controls.Add(this.buttonEwidencjaSprzedazy);
-					this.Controls.Add(this.cbPrzelew);
-					this.Controls.Add(this.cbGotówka);
-					this.Controls.Add(this.textID);
-					this.Controls.Add(this.buttonKorekta);
-					this.Controls.Add(this.buttonPZ);
-					this.Controls.Add(this.buttonINW);
-					this.Controls.Add(this.buttonPrzelew);
-					this.Controls.Add(this.buttonRW);
-					this.Controls.Add(this.buttonKontrahent);
-					this.Controls.Add(this.buttonKontrahenci);
-					this.Controls.Add(this.buttonTowary);
-					this.Controls.Add(this.buttonPZZK);
-					this.Controls.Add(this.buttonRaport);
-					this.Controls.Add(this.buttonWpłata);
-					this.Controls.Add(this.buttonRozliczenie);
-					this.Name = "Form1";
-					this.Text = "Form1";
-					this.Load += new System.EventHandler(this.Form1_Load);
-					this.ResumeLayout(false);
-					this.PerformLayout();
+            this.buttonPZ2 = new System.Windows.Forms.Button();
+            this.buttonINW = new System.Windows.Forms.Button();
+            this.buttonKorekta = new System.Windows.Forms.Button();
+            this.textID = new System.Windows.Forms.TextBox();
+            this.buttonPrzelew = new System.Windows.Forms.Button();
+            this.cbGotówka = new System.Windows.Forms.CheckBox();
+            this.cbPrzelew = new System.Windows.Forms.CheckBox();
+            this.buttonRW = new System.Windows.Forms.Button();
+            this.buttonKontrahent = new System.Windows.Forms.Button();
+            this.buttonKontrahenci = new System.Windows.Forms.Button();
+            this.buttonTowary = new System.Windows.Forms.Button();
+            this.buttonPZ2ZK2 = new System.Windows.Forms.Button();
+            this.buttonRaport = new System.Windows.Forms.Button();
+            this.buttonWpłata = new System.Windows.Forms.Button();
+            this.buttonRozliczenie = new System.Windows.Forms.Button();
+            this.buttonEwidencjaSprzedazy = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonPZ2
+            // 
+            this.buttonPZ2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonPZ2.Location = new System.Drawing.Point(14, 14);
+            this.buttonPZ2.Name = "buttonPZ2";
+            this.buttonPZ2.Size = new System.Drawing.Size(197, 55);
+            this.buttonPZ2.TabIndex = 0;
+            this.buttonPZ2.Text = "Generowanie dokumentu PZ2";
+            this.buttonPZ2.Click += new System.EventHandler(this.buttonPZ2_Click);
+            // 
+            // buttonINW
+            // 
+            this.buttonINW.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonINW.Location = new System.Drawing.Point(14, 152);
+            this.buttonINW.Name = "buttonINW";
+            this.buttonINW.Size = new System.Drawing.Size(197, 56);
+            this.buttonINW.TabIndex = 2;
+            this.buttonINW.Text = "Generowanie dokumentu Inwentaryzacji";
+            this.buttonINW.Click += new System.EventHandler(this.buttonINW_Click);
+            // 
+            // buttonKorekta
+            // 
+            this.buttonKorekta.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonKorekta.Location = new System.Drawing.Point(14, 222);
+            this.buttonKorekta.Name = "buttonKorekta";
+            this.buttonKorekta.Size = new System.Drawing.Size(197, 50);
+            this.buttonKorekta.TabIndex = 3;
+            this.buttonKorekta.Text = "Korekta sprzedaży dokumentu o zadanym ID";
+            this.buttonKorekta.Click += new System.EventHandler(this.buttonKorekta_Click);
+            // 
+            // textID
+            // 
+            this.textID.Location = new System.Drawing.Point(245, 235);
+            this.textID.Name = "textID";
+            this.textID.Size = new System.Drawing.Size(91, 22);
+            this.textID.TabIndex = 6;
+            this.textID.Text = "18";
+            // 
+            // buttonPrzelew
+            // 
+            this.buttonPrzelew.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonPrzelew.Location = new System.Drawing.Point(14, 286);
+            this.buttonPrzelew.Name = "buttonPrzelew";
+            this.buttonPrzelew.Size = new System.Drawing.Size(197, 51);
+            this.buttonPrzelew.TabIndex = 4;
+            this.buttonPrzelew.Text = "Faktura sprzedaży";
+            this.buttonPrzelew.Click += new System.EventHandler(this.buttonPrzelew_Click);
+            // 
+            // cbGotówka
+            // 
+            this.cbGotówka.Checked = true;
+            this.cbGotówka.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbGotówka.Location = new System.Drawing.Point(240, 291);
+            this.cbGotówka.Name = "cbGotówka";
+            this.cbGotówka.Size = new System.Drawing.Size(154, 27);
+            this.cbGotówka.TabIndex = 7;
+            this.cbGotówka.Text = "Zapłacono gotówką";
+            // 
+            // cbPrzelew
+            // 
+            this.cbPrzelew.Checked = true;
+            this.cbPrzelew.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbPrzelew.Location = new System.Drawing.Point(240, 318);
+            this.cbPrzelew.Name = "cbPrzelew";
+            this.cbPrzelew.Size = new System.Drawing.Size(139, 28);
+            this.cbPrzelew.TabIndex = 8;
+            this.cbPrzelew.Text = "Na przelew 21 dni";
+            // 
+            // buttonRW
+            // 
+            this.buttonRW.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonRW.Location = new System.Drawing.Point(14, 83);
+            this.buttonRW.Name = "buttonRW";
+            this.buttonRW.Size = new System.Drawing.Size(197, 55);
+            this.buttonRW.TabIndex = 1;
+            this.buttonRW.Text = "Generowanie dokumentu RW";
+            this.buttonRW.Click += new System.EventHandler(this.buttonRW_Click);
+            // 
+            // buttonKontrahent
+            // 
+            this.buttonKontrahent.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonKontrahent.Location = new System.Drawing.Point(226, 14);
+            this.buttonKontrahent.Name = "buttonKontrahent";
+            this.buttonKontrahent.Size = new System.Drawing.Size(196, 55);
+            this.buttonKontrahent.TabIndex = 5;
+            this.buttonKontrahent.Text = "Zakładanie karty kontrahenta";
+            this.buttonKontrahent.Click += new System.EventHandler(this.buttonKontrahent_Click);
+            // 
+            // buttonKontrahenci
+            // 
+            this.buttonKontrahenci.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonKontrahenci.Location = new System.Drawing.Point(14, 351);
+            this.buttonKontrahenci.Name = "buttonKontrahenci";
+            this.buttonKontrahenci.Size = new System.Drawing.Size(197, 51);
+            this.buttonKontrahenci.TabIndex = 4;
+            this.buttonKontrahenci.Text = "Filtrowana lista kontrahentów";
+            this.buttonKontrahenci.Click += new System.EventHandler(this.buttonKontrahenci_Click);
+            // 
+            // buttonTowary
+            // 
+            this.buttonTowary.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonTowary.Location = new System.Drawing.Point(14, 415);
+            this.buttonTowary.Name = "buttonTowary";
+            this.buttonTowary.Size = new System.Drawing.Size(197, 51);
+            this.buttonTowary.TabIndex = 4;
+            this.buttonTowary.Text = "Filtrowana lista towarów";
+            this.buttonTowary.Click += new System.EventHandler(this.buttonTowary_Click);
+            // 
+            // buttonPZ2ZK2
+            // 
+            this.buttonPZ2ZK2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonPZ2ZK2.Location = new System.Drawing.Point(226, 83);
+            this.buttonPZ2ZK2.Name = "buttonPZ2ZK2";
+            this.buttonPZ2ZK2.Size = new System.Drawing.Size(196, 55);
+            this.buttonPZ2ZK2.TabIndex = 0;
+            this.buttonPZ2ZK2.Text = "Generowanie z dokumentu PZ2 dokumentu ZK2";
+            this.buttonPZ2ZK2.Click += new System.EventHandler(this.buttonPZ2ZK2_Click);
+            // 
+            // buttonRaport
+            // 
+            this.buttonRaport.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonRaport.Location = new System.Drawing.Point(432, 14);
+            this.buttonRaport.Name = "buttonRaport";
+            this.buttonRaport.Size = new System.Drawing.Size(197, 55);
+            this.buttonRaport.TabIndex = 5;
+            this.buttonRaport.Text = "Generowanie raportu kasowego";
+            this.buttonRaport.Click += new System.EventHandler(this.buttonRaport_Click);
+            // 
+            // buttonWpłata
+            // 
+            this.buttonWpłata.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonWpłata.Location = new System.Drawing.Point(432, 83);
+            this.buttonWpłata.Name = "buttonWpłata";
+            this.buttonWpłata.Size = new System.Drawing.Size(197, 55);
+            this.buttonWpłata.TabIndex = 5;
+            this.buttonWpłata.Text = "Generowanie wpłaty";
+            this.buttonWpłata.Click += new System.EventHandler(this.buttonWpłata_Click);
+            // 
+            // buttonRozliczenie
+            // 
+            this.buttonRozliczenie.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonRozliczenie.Location = new System.Drawing.Point(432, 152);
+            this.buttonRozliczenie.Name = "buttonRozliczenie";
+            this.buttonRozliczenie.Size = new System.Drawing.Size(197, 56);
+            this.buttonRozliczenie.TabIndex = 5;
+            this.buttonRozliczenie.Text = "Rozliczenie faktury";
+            this.buttonRozliczenie.Click += new System.EventHandler(this.buttonRozliczenie_Click);
+            // 
+            // buttonEwidencjaSprzedazy
+            // 
+            this.buttonEwidencjaSprzedazy.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonEwidencjaSprzedazy.Location = new System.Drawing.Point(432, 219);
+            this.buttonEwidencjaSprzedazy.Name = "buttonEwidencjaSprzedazy";
+            this.buttonEwidencjaSprzedazy.Size = new System.Drawing.Size(197, 56);
+            this.buttonEwidencjaSprzedazy.TabIndex = 9;
+            this.buttonEwidencjaSprzedazy.Text = "Ewidencja sprzedaży";
+            this.buttonEwidencjaSprzedazy.Click += new System.EventHandler(this.buttonEwidencjaSprzedazy_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.ClientSize = new System.Drawing.Size(646, 480);
+            this.Controls.Add(this.buttonEwidencjaSprzedazy);
+            this.Controls.Add(this.cbPrzelew);
+            this.Controls.Add(this.cbGotówka);
+            this.Controls.Add(this.textID);
+            this.Controls.Add(this.buttonKorekta);
+            this.Controls.Add(this.buttonPZ2);
+            this.Controls.Add(this.buttonINW);
+            this.Controls.Add(this.buttonPrzelew);
+            this.Controls.Add(this.buttonRW);
+            this.Controls.Add(this.buttonKontrahent);
+            this.Controls.Add(this.buttonKontrahenci);
+            this.Controls.Add(this.buttonTowary);
+            this.Controls.Add(this.buttonPZ2ZK2);
+            this.Controls.Add(this.buttonRaport);
+            this.Controls.Add(this.buttonWpłata);
+            this.Controls.Add(this.buttonRozliczenie);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion
@@ -281,22 +282,22 @@ namespace PrzykladHandel
             Application.Run(new Form1());
         }
 
-        private System.Windows.Forms.Button buttonPZ;
-        private System.Windows.Forms.Button buttonINW;
-        private System.Windows.Forms.TextBox textID;
-        private System.Windows.Forms.Button buttonKorekta;
-        private System.Windows.Forms.Button buttonPrzelew;
-        private System.Windows.Forms.CheckBox cbGotówka;
-        private System.Windows.Forms.CheckBox cbPrzelew;
-        private System.Windows.Forms.Button buttonRW;
-        private System.Windows.Forms.Button buttonKontrahent;
-        private System.Windows.Forms.Button buttonKontrahenci;
-        private System.Windows.Forms.Button buttonTowary;
-        private System.Windows.Forms.Button buttonPZZK;
-        private System.Windows.Forms.Button buttonRaport;
-        private System.Windows.Forms.Button buttonWpłata;
-        private System.Windows.Forms.Button buttonRozliczenie;
-			private Button buttonEwidencjaSprzedazy;
+        private Button buttonPZ2;
+        private Button buttonINW;
+        private TextBox textID;
+        private Button buttonKorekta;
+        private Button buttonPrzelew;
+        private CheckBox cbGotówka;
+        private CheckBox cbPrzelew;
+        private Button buttonRW;
+        private Button buttonKontrahent;
+        private Button buttonKontrahenci;
+        private Button buttonTowary;
+        private Button buttonPZ2ZK2;
+        private Button buttonRaport;
+        private Button buttonWpłata;
+        private Button buttonRozliczenie;
+		private Button buttonEwidencjaSprzedazy;
 
         /// <summary>
         /// To jest pole zawierające informacje o loginie do bazy danych,
@@ -325,14 +326,14 @@ namespace PrzykladHandel
             //
             login = database.Login(false, "Administrator", "");
         }
-
+        
         #endregion
 
-        #region Utworzenie dokumentu PZ
+        #region Utworzenie dokumentu PZ2
 
-        private void buttonPZ_Click(object sender, System.EventArgs e) {
+        private void buttonPZ2_Click(object sender, System.EventArgs e) {
             ///////////////////////////////////////////////////////////////////
-            // Metoda tworzy nowy dokument PZ wypełniając go przykładowymi
+            // Metoda tworzy nowy dokument PZ2 wypełniając go przykładowymi
             // pozycjami
             //
 
@@ -375,9 +376,9 @@ namespace PrzykladHandel
                     // handlowego. W tym przypadku wyszukujemy definicje wyszukujemy
                     // wg jej symbolu "PZ".
                     //
-                    DefDokHandlowego definicja = hm.DefDokHandlowych.WgSymbolu["PZ"];
+                    DefDokHandlowego definicja = hm.DefDokHandlowych.WgSymbolu["PZ 2"];
                     if (definicja==null) 
-                        throw new InvalidOperationException("Nieznaleziona definicja dokumentu PZ.");
+                        throw new InvalidOperationException("Nieznaleziona definicja dokumentu PZ 2.");
                     dokument.Definicja = definicja;
 
                     /////////////////////////////////////////////////////////////////
@@ -409,50 +410,62 @@ namespace PrzykladHandel
                     // Ponieważ w kartotece może znajdować się wiele towarów o tym 
                     // samym kodzie wybrazy zostanie pierwszy z nich.
                     //
-					Towar towar = (Towar)tm.Towary.WgEAN["2000000000954"].GetNext();
+					Towar towar = tm.Towary.WgEAN["2000000000954"].GetNext();
                     if (towar!=null) {
                         //////////////////////////////////////////////////////////////
-                        // Utworzyć nowy obiekt pozycji dokumentu handlowego, który
-                        // zostanie dodany do sescji.
+                        // Utworzyć nową transakcję dla każdej pozycji osobno.
                         //
-                        PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
-                        hm.PozycjeDokHan.AddRow(pozycja);
+                        using (var transPozycji = session.Logout(true))
+                        {
+                            //////////////////////////////////////////////////////////////
+                            // Utworzyć nowy obiekt pozycji dokumentu handlowego, który
+                            // zostanie dodany do sesji.
+                            //
+                            PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
+                            hm.PozycjeDokHan.AddRow(pozycja);
 
-                        //////////////////////////////////////////////////////////////
-                        // Przypisać towar do nowo utworzonej pozycji dokumentu, czyli
-                        // wskazać, który towar ma być przyjęty do magazynu.
-                        //
-                        pozycja.Towar = towar;
+                            //////////////////////////////////////////////////////////////
+                            // Przypisać towar do nowo utworzonej pozycji dokumentu, czyli
+                            // wskazać, który towar ma być przyjęty do magazynu.
+                            //
+                            pozycja.Towar = towar;
 
-                        //////////////////////////////////////////////////////////////
-                        // W pozycji dokumentu należy jeszcze wprowadzić ilość
-                        // towaru przyjmowanego na magazyn. Ilość reprezentowana jest
-                        // przez liczbę 10 będącą wartością ilości (pierwszy parametr) 
-                        // oraz jednostkę opisującą tę ilość (drugi parametr). Jeżeli
-                        // jednostka jest null, to przyjmowana jest jednostka z
-                        // karty towarowej.
-                        // Poniżej znajduje się również wykomentowany przykład, w
-                        // którym w sposób jawny jest wskazanie na jednostkę w metrach.
-                        //
-                        pozycja.Ilosc = new Quantity(10, null);
-                        // pozycja.Ilosc = new Quantity(10, "m");
+                            //////////////////////////////////////////////////////////////
+                            // W pozycji dokumentu należy jeszcze wprowadzić ilość
+                            // towaru przyjmowanego na magazyn. Ilość reprezentowana jest
+                            // przez liczbę 10 będącą wartością ilości (pierwszy parametr) 
+                            // oraz jednostkę opisującą tę ilość (drugi parametr). Jeżeli
+                            // jednostka jest null, to przyjmowana jest jednostka z
+                            // karty towarowej.
+                            // Poniżej znajduje się również wykomentowany przykład, w
+                            // którym w sposób jawny jest wskazanie na jednostkę w metrach.
+                            //
+                            pozycja.Ilosc = new Quantity(10, null);
+                            // pozycja.Ilosc = new Quantity(10, "m");
 
-                        //////////////////////////////////////////////////////////////
-                        // Pozycji dokumentu należy również przypisać cenę w jakiej
-                        // będzie on wprowadzany do magazynu. (cena zakupu)
-                        // Poniżej przypisywana jest cena w PLN. Dlatego nie jest
-                        // wyspecyfikowany drugi parametr określający walutę ceny.
-                        //
-                        pozycja.Cena = new DoubleCy(12.34);
+                            //////////////////////////////////////////////////////////////
+                            // Pozycji dokumentu należy również przypisać cenę w jakiej
+                            // będzie on wprowadzany do magazynu. (cena zakupu)
+                            // Poniżej przypisywana jest cena w PLN. Dlatego nie jest
+                            // wyspecyfikowany drugi parametr określający walutę ceny.
+                            //
+                            pozycja.Cena = new DoubleCy(12.34);
 
-                        //////////////////////////////////////////////////////////////
-                        // Poszczególnym pozycją można przypisać również dodatkowe
-                        // cechy, które zależne są od konfiguracji programu. Przykład
-                        // pokazuje jak ustawić cechę z numerem beli.
-                        // Kod jest wykomentowany, ponieważ baza demo nie posiada
-                        // zdefiniowanej tej cechy.
-                        //
-                        //pozycja.Features["Numer beli"] = "123456";
+                            //////////////////////////////////////////////////////////////
+                            // Poszczególnym pozycją można przypisać również dodatkowe
+                            // cechy, które zależne są od konfiguracji programu. Przykład
+                            // pokazuje jak ustawić cechę z numerem beli.
+                            // Kod jest wykomentowany, ponieważ baza demo nie posiada
+                            // zdefiniowanej tej cechy.
+                            //
+                            //pozycja.Features["Numer beli"] = "123456";
+
+                            //////////////////////////////////////////////////////////////
+                            // Na każdej pozycji dokumentu należy zatwierdzić osobną
+                            // transakcję metodą CommitUI
+                            //
+                            transPozycji.CommitUI();
+                        }
                     }
 
                     /////////////////////////////////////////////////////////////////
@@ -570,49 +583,62 @@ namespace PrzykladHandel
                     // samym kodzie wybrazy zostanie pierwszy z nich.
                     //
                     Towar towar = (Towar)tm.Towary.WgKodu["Buty"];
-                    if (towar!=null) {
+                    if (towar != null)
+                    {
                         //////////////////////////////////////////////////////////////
-                        // Utworzyć nowy obiekt pozycji dokumentu handlowego, który
-                        // zostanie dodany do sescji.
+                        // Utworzyć nową transakcję dla każdej pozycji osobno.
                         //
-                        PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
-                        hm.PozycjeDokHan.AddRow(pozycja);
+                        using (var transPozycji = session.Logout(true))
+                        {
+                            //////////////////////////////////////////////////////////////
+                            // Utworzyć nowy obiekt pozycji dokumentu handlowego, który
+                            // zostanie dodany do sescji.
+                            //
+                            PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
+                            hm.PozycjeDokHan.AddRow(pozycja);
 
-                        //////////////////////////////////////////////////////////////
-                        // Przypisać towar do nowo utworzonej pozycji dokumentu, czyli
-                        // wskazać, który towar ma być przyjęty do magazynu.
-                        //
-                        pozycja.Towar = towar;
+                            //////////////////////////////////////////////////////////////
+                            // Przypisać towar do nowo utworzonej pozycji dokumentu, czyli
+                            // wskazać, który towar ma być przyjęty do magazynu.
+                            //
+                            pozycja.Towar = towar;
 
-                        //////////////////////////////////////////////////////////////
-                        // W pozycji dokumentu należy jeszcze wprowadzić ilość
-                        // towaru przyjmowanego na magazyn. Ilość reprezentowana jest
-                        // przez liczbę 10 będącą wartością ilości (pierwszy parametr) 
-                        // oraz jednostkę opisującą tę ilość (drugi parametr). Jeżeli
-                        // jednostka jest null, to przyjmowana jest jednostka z
-                        // karty towarowej.
-                        // Poniżej znajduje się również wykomentowany przykład, w
-                        // którym w sposób jawny jest wskazanie na jednostkę w metrach.
-                        //
-                        pozycja.Ilosc = new Quantity(10, null);
-                        // pozycja.Ilosc = new Quantity(10, "m");
+                            //////////////////////////////////////////////////////////////
+                            // W pozycji dokumentu należy jeszcze wprowadzić ilość
+                            // towaru przyjmowanego na magazyn. Ilość reprezentowana jest
+                            // przez liczbę 10 będącą wartością ilości (pierwszy parametr) 
+                            // oraz jednostkę opisującą tę ilość (drugi parametr). Jeżeli
+                            // jednostka jest null, to przyjmowana jest jednostka z
+                            // karty towarowej.
+                            // Poniżej znajduje się również wykomentowany przykład, w
+                            // którym w sposób jawny jest wskazanie na jednostkę w metrach.
+                            //
+                            pozycja.Ilosc = new Quantity(10, null);
+                            // pozycja.Ilosc = new Quantity(10, "m");
 
-                        //////////////////////////////////////////////////////////////
-                        // Pozycji dokumentu należy również przypisać cenę w jakiej
-                        // będzie on wprowadzany do magazynu. (cena zakupu)
-                        // Poniżej przypisywana jest cena w PLN. Dlatego nie jest
-                        // wyspecyfikowany drugi parametr określający walutę ceny.
-                        //
-                        pozycja.Cena = new DoubleCy(12.34);
+                            //////////////////////////////////////////////////////////////
+                            // Pozycji dokumentu należy również przypisać cenę w jakiej
+                            // będzie on wprowadzany do magazynu. (cena zakupu)
+                            // Poniżej przypisywana jest cena w PLN. Dlatego nie jest
+                            // wyspecyfikowany drugi parametr określający walutę ceny.
+                            //
+                            pozycja.Cena = new DoubleCy(12.34);
 
-                        //////////////////////////////////////////////////////////////
-                        // Poszczególnym pozycją można przypisać również dodatkowe
-                        // cechy, które zależne są od konfiguracji programu. Przykład
-                        // pokazuje jak ustawić cechę z numerem beli.
-                        // Kod jest wykomentowany, ponieważ baza demo nie posiada
-                        // zdefiniowanej tej cechy.
-                        //
-                        //pozycja.Features["Numer beli"] = "123456";
+                            //////////////////////////////////////////////////////////////
+                            // Poszczególnym pozycją można przypisać również dodatkowe
+                            // cechy, które zależne są od konfiguracji programu. Przykład
+                            // pokazuje jak ustawić cechę z numerem beli.
+                            // Kod jest wykomentowany, ponieważ baza demo nie posiada
+                            // zdefiniowanej tej cechy.
+                            //
+                            //pozycja.Features["Numer beli"] = "123456";
+
+                            //////////////////////////////////////////////////////////////
+                            // Na każdej pozycji dokumentu należy zatwierdzić osobną
+                            // transakcję metodą CommitUI
+                            //
+                            transPozycji.CommitUI();
+                        }
                     }
 
                     /////////////////////////////////////////////////////////////////
@@ -690,16 +716,29 @@ namespace PrzykladHandel
                     // "pierwszej" faktury.
                     //
                     DokumentHandlowy korekta = defKorekta.KorygujDokument(dokument);
-				
+
                     /////////////////////////////////////////////////////////////////
                     // Następnie można zmodyfikować pozycje na tym dokumencie.
                     //
-                    foreach (PozycjaDokHandlowego pozycja in korekta.Pozycje) {
+                    foreach (PozycjaDokHandlowego pozycja in korekta.Pozycje)
+                    {
 
-                        /////////////////////////////////////////////////////////////////
-                        // Tutaj należy dokonać zmian pozycji
+                        //////////////////////////////////////////////////////////////
+                        // Utworzyć nową transakcję dla każdej pozycji osobno.
                         //
+                        using (var transPozycji = session.Logout(true))
+                        {
 
+                            /////////////////////////////////////////////////////////////////
+                            // Tutaj należy dokonać zmian pozycji
+                            //
+
+                            //////////////////////////////////////////////////////////////
+                            // Na każdej pozycji dokumentu należy zatwierdzić osobną
+                            // transakcję metodą CommitUI
+                            //
+                            //transPozycji.CommitUI();
+                        }
                     }
 
                     /////////////////////////////////////////////////////////////////
@@ -748,13 +787,25 @@ namespace PrzykladHandel
                         throw new InvalidOperationException("Nieznaleziony kontrahent o kodzie ABC.");
                     dokument.Kontrahent = kontrahent;
 
-                    Towar towar = (Towar)tm.Towary.WgEAN["2000000000022"].GetNext();
+                    Towar towar = tm.Towary.WgKodu["MONTAZ"];
                     if (towar!=null) {
-                        PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
-                        hm.PozycjeDokHan.AddRow(pozycja);
-                        pozycja.Towar = towar;
-                        pozycja.Ilosc = new Quantity(10, null);
-                        pozycja.Cena = new DoubleCy(12.34);
+                        //////////////////////////////////////////////////////////////
+                        // Utworzyć nową transakcję dla każdej pozycji osobno.
+                        //
+                        using (var transPozycji = session.Logout(true))
+                        {
+                            PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
+                            hm.PozycjeDokHan.AddRow(pozycja);
+                            pozycja.Towar = towar;
+                            pozycja.Ilosc = new Quantity(10, null);
+                            pozycja.Cena = new DoubleCy(12.34);
+
+                            //////////////////////////////////////////////////////////////
+                            // Na każdej pozycji dokumentu należy zatwierdzić osobną
+                            // transakcję metodą CommitUI
+                            //
+                            transPozycji.CommitUI();
+                        }
                     }
 
                     ///////////////////////////////////////////////////////////////////
@@ -929,47 +980,59 @@ namespace PrzykladHandel
 					Towar towar = tm.Towary.WgKodu["BIKINI"];
                     if (towar!=null) {
                         //////////////////////////////////////////////////////////////
-                        // Utworzyć nowy obiekt pozycji dokumentu handlowego, który
-                        // zostanie dodany do sescji.
+                        // Utworzyć nową transakcję dla każdej pozycji osobno.
                         //
-                        PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
-                        hm.PozycjeDokHan.AddRow(pozycja);
+                        using (var transPozycji = session.Logout(true))
+                        {
+                            //////////////////////////////////////////////////////////////
+                            // Utworzyć nowy obiekt pozycji dokumentu handlowego, który
+                            // zostanie dodany do sescji.
+                            //
+                            PozycjaDokHandlowego pozycja = new PozycjaDokHandlowego(dokument);
+                            hm.PozycjeDokHan.AddRow(pozycja);
 
-                        //////////////////////////////////////////////////////////////
-                        // Przypisać towar do nowo utworzonej pozycji dokumentu, czyli
-                        // wskazać, który towar ma być wydany z magazynu.
-                        //
-                        pozycja.Towar = towar;
+                            //////////////////////////////////////////////////////////////
+                            // Przypisać towar do nowo utworzonej pozycji dokumentu, czyli
+                            // wskazać, który towar ma być wydany z magazynu.
+                            //
+                            pozycja.Towar = towar;
 
-                        //////////////////////////////////////////////////////////////
-                        // W pozycji dokumentu należy jeszcze wprowadzić ilość
-                        // towaru wydawanego z magazynu. Ilość reprezentowana jest
-                        // przez liczbę 10 będącą wartością ilości (pierwszy parametr) 
-                        // oraz jednostkę opisującą tę ilość (drugi parametr). Jeżeli
-                        // jednostka jest null, to przyjmowana jest jednostka z
-                        // karty towarowej.
-                        // Poniżej znajduje się również wykomentowany przykład, w
-                        // którym w sposób jawny jest wskazanie na jednostkę w metrach.
-                        //
-                        pozycja.Ilosc = new Quantity(10, null);
-                        // pozycja.Ilosc = new Quantity(10, "m");
+                            //////////////////////////////////////////////////////////////
+                            // W pozycji dokumentu należy jeszcze wprowadzić ilość
+                            // towaru wydawanego z magazynu. Ilość reprezentowana jest
+                            // przez liczbę 10 będącą wartością ilości (pierwszy parametr) 
+                            // oraz jednostkę opisującą tę ilość (drugi parametr). Jeżeli
+                            // jednostka jest null, to przyjmowana jest jednostka z
+                            // karty towarowej.
+                            // Poniżej znajduje się również wykomentowany przykład, w
+                            // którym w sposób jawny jest wskazanie na jednostkę w metrach.
+                            //
+                            pozycja.Ilosc = new Quantity(10, null);
+                            // pozycja.Ilosc = new Quantity(10, "m");
 
-                        //////////////////////////////////////////////////////////////
-                        // Pozycji dokumentu należy również przypisać cenę w jakiej
-                        // będzie on wprowadzany do magazynu. (cena zakupu)
-                        // Poniżej przypisywana jest cena w PLN. Dlatego nie jest
-                        // wyspecyfikowany drugi parametr określający walutę ceny.
-                        //
-                        pozycja.Cena = new DoubleCy(12.34);
+                            //////////////////////////////////////////////////////////////
+                            // Pozycji dokumentu należy również przypisać cenę w jakiej
+                            // będzie on wprowadzany do magazynu. (cena zakupu)
+                            // Poniżej przypisywana jest cena w PLN. Dlatego nie jest
+                            // wyspecyfikowany drugi parametr określający walutę ceny.
+                            //
+                            pozycja.Cena = new DoubleCy(12.34);
 
-                        //////////////////////////////////////////////////////////////
-                        // Poszczególnym pozycją można przypisać również dodatkowe
-                        // cechy, które zależne są od konfiguracji programu. Przykład
-                        // pokazuje jak ustawić cechę z numerem beli.
-                        // Kod jest wykomentowany, ponieważ baza demo nie posiada
-                        // zdefiniowanej tej cechy.
-                        //
-                        //pozycja.Features["Numer beli"] = "123456";
+                            //////////////////////////////////////////////////////////////
+                            // Poszczególnym pozycją można przypisać również dodatkowe
+                            // cechy, które zależne są od konfiguracji programu. Przykład
+                            // pokazuje jak ustawić cechę z numerem beli.
+                            // Kod jest wykomentowany, ponieważ baza demo nie posiada
+                            // zdefiniowanej tej cechy.
+                            //
+                            //pozycja.Features["Numer beli"] = "123456";
+
+                            //////////////////////////////////////////////////////////////
+                            // Na każdej pozycji dokumentu należy zatwierdzić osobną
+                            // transakcję metodą CommitUI
+                            //
+                            transPozycji.CommitUI();
+                        }
                     }
 
                     /////////////////////////////////////////////////////////////////
@@ -1266,13 +1329,13 @@ namespace PrzykladHandel
 
         #endregion
 
-        #region Generowanie z dokumentu PZ dokumentu ZK
+        #region Generowanie z dokumentu PZ 2 dokumentu ZK 2
 
-        private void buttonPZZK_Click(object sender, System.EventArgs e) {
+        private void buttonPZ2ZK2_Click(object sender, System.EventArgs e) {
             //
             // Do poprawnego działania tej funkcji konieczne jest zdefiniowanie
-            // obiegu dokumentów polegającego na wprowadzaniu dokumentu PZ
-            // a potem ręcznym generowaniu faktury zakupu ZK.
+            // obiegu dokumentów polegającego na wprowadzaniu dokumentu PZ 2
+            // a potem ręcznym generowaniu faktury zakupu ZK 2.
             //
             // Metoda demonstruje sposób generowania dokumentu podrzędnego 
             // relacji do innego dokumentu
@@ -1301,51 +1364,25 @@ namespace PrzykladHandel
                 using (ITransaction trans = session.Logout(true)) {
 
                     //
-                    // Potrzebna definicja dokumentu PZ i dokumentu ZK.
+                    // Potrzebna definicja dokumentu PZ 2 i dokumentu ZK 2.
                     //
-                    DefDokHandlowego definicjaPZ = hm.DefDokHandlowych.WgSymbolu["PZ"];
-                    DefDokHandlowego definicjaZK = hm.DefDokHandlowych.WgSymbolu["ZK"];
-                    if (definicjaPZ==null || definicjaZK==null) 
-                        throw new InvalidOperationException("Nieznaleziona definicja dokumentu PZ i/lub ZK.");
+                    DefDokHandlowego definicjaPZ2 = hm.DefDokHandlowych.WgSymbolu["PZ 2"];
+                    DefDokHandlowego definicjaZK2 = hm.DefDokHandlowych.WgSymbolu["ZK 2"];
+                    if (definicjaPZ2==null || definicjaZK2==null) 
+                        throw new InvalidOperationException("Nieznaleziona definicja dokumentu PZ 2 i/lub ZK 2.");
 
                     //
-                    // Wyszukujemy dokument PZ, z którego ma być utworzona faktura.
+                    // Wyszukujemy dokument PZ 2, z którego ma być utworzona faktura.
                     //
-                    DokumentHandlowy dokumentPZ = hm.DokHandlowe.NumerWgNumeruDokumentu["PZ/000001/05"];
-                    if (dokumentPZ==null)
-                        throw new InvalidOperationException("Konieczne jest wprowadzenie dokumentu PZ/000001/05.");
+                    DokumentHandlowy dokumentPZ2 = hm.DokHandlowe.WgDefinicja[definicjaPZ2].GetNext();
+                    if (dokumentPZ2==null)
+                        throw new InvalidOperationException("Nie znaleziono dokumentu PZ 2.");
 
                     //
-                    // Wyszukujemy definicję relacji handlowej PZ->ZK
+                    // Tworzymy dokument ZK 2 za pomocą relacji PZ 2 -> ZK 2 za pomocą API Relacji.
                     //
-                    DefRelacjiMagazynowa defRelPZZK = null;
-                    foreach (DefRelacjiHandlowej defRel in definicjaPZ.Podrzedne) {
-                        if (defRel.DefinicjaPodrzednego==definicjaZK) {
-                            defRelPZZK = (DefRelacjiMagazynowa)defRel;
-                            break;
-                        }
-                    }
-                    if (defRelPZZK==null)
-                        throw new InvalidOperationException("Nieznaleziona definicja relacji PZ->ZK.");
-
-                    //
-                    // Alternatywny, szybki sposób znalezienia tej szczególnej definicji
-                    // relacji (czyli to co wyżej tylko prościej).
-                    //
-                    defRelPZZK = (DefRelacjiMagazynowa)hm.DefRelHandlowych.PZFZ;
-                    if (defRelPZZK==null)
-                        throw new InvalidOperationException("Nieznaleziona definicja relacji PZ->ZK.");
-
-                    //
-                    // Utworzuć obiekt context, który będzie potrzebny
-                    //
-                    Context cx = Context.Empty.Clone(session);
-
-                    //
-                    // Utworzyć dokument podrzędny ZK
-                    //
-                    DokumentDocelowy dd = new DokumentDocelowy(dokumentPZ, defRelPZZK, false, cx);
-                    DokumentHandlowy dokumentZK = defRelPZZK.GenerujNowy(dokumentPZ, dd);
+                    var relacjeApi = (IRelacjeService)session.GetService(typeof(IRelacjeService));
+                    relacjeApi.NowyPodrzednyIndywidualny(new[] { dokumentPZ2 }, "ZK 2");
 
                     //
                     // Wszystkie operacje zostały poprawnie zakończone i zapewne 
@@ -1458,56 +1495,56 @@ namespace PrzykladHandel
 
         #endregion
 
-			#region Generowanie ewidencji sprzedaży dla kontrahenta ABC
+		#region Generowanie ewidencji sprzedaży dla kontrahenta ABC
 
-			private void buttonEwidencjaSprzedazy_Click(object sender, System.EventArgs e) {
-				using (Session session = login.CreateSession(false, false)) {
-					EwidencjaVatModule vat = EwidencjaVatModule.GetInstance(session);
-					CoreModule core = CoreModule.GetInstance(session);
-					CRMModule crm = CRMModule.GetInstance(session);
-					KsiegaModule ks = KsiegaModule.GetInstance(session);
+		private void buttonEwidencjaSprzedazy_Click(object sender, System.EventArgs e) {
+			using (Session session = login.CreateSession(false, false)) {
+				EwidencjaVatModule vat = EwidencjaVatModule.GetInstance(session);
+				CoreModule core = CoreModule.GetInstance(session);
+				CRMModule crm = CRMModule.GetInstance(session);
+				KsiegaModule ks = KsiegaModule.GetInstance(session);
 
-					Kontrahent kontrahent = crm.Kontrahenci.WgKodu["ABC"];
-					if (kontrahent == null)
-						throw new InvalidOperationException("Nieznaleziony kontrahent o kodzie ABC.");
+				Kontrahent kontrahent = crm.Kontrahenci.WgKodu["ABC"];
+				if (kontrahent == null)
+					throw new InvalidOperationException("Nieznaleziony kontrahent o kodzie ABC.");
 
-					using (ITransaction t = session.Logout(true)) {
-						//utowrzenie ewidencji sprzedaży i dodanie do tabeli ewidencji
-						SprzedazEwidencja ewidencja = new SprzedazEwidencja();
-						core.DokEwidencja.AddRow(ewidencja);
+				using (ITransaction t = session.Logout(true)) {
+					//utowrzenie ewidencji sprzedaży i dodanie do tabeli ewidencji
+					SprzedazEwidencja ewidencja = new SprzedazEwidencja();
+					core.DokEwidencja.AddRow(ewidencja);
 
-						//ustawienie dat
-						ewidencja.DataWplywu = Date.Today;
-						ewidencja.DataDokumentu = Date.Today;
-						ewidencja.DataOperacji = Date.Today;
+					//ustawienie dat
+					ewidencja.DataWplywu = Date.Today;
+					ewidencja.DataDokumentu = Date.Today;
+					ewidencja.DataOperacji = Date.Today;
 
-						//ustawienie numeru dokumentu, podmiotu i opisu
-						ewidencja.NumerDokumentu = "FV/2007/123456";
-						ewidencja.Podmiot = kontrahent;
-						ewidencja.Opis = "Faktura sprzedaży";
+					//ustawienie numeru dokumentu, podmiotu i opisu
+					ewidencja.NumerDokumentu = "FV/2007/123456";
+					ewidencja.Podmiot = kontrahent;
+					ewidencja.Opis = "Faktura sprzedaży";
 
-						//dodanie elementów VAT
-						ElemEwidencjiVATSprzedaz elemVAT = new ElemEwidencjiVATSprzedaz(ewidencja);
-						vat.EleEwidencjiVATT.AddRow(elemVAT);
-						elemVAT.DefinicjaStawki = core.DefStawekVat[StatusStawkiVat.Opodatkowana, new Percent(0.22m), false];
-						elemVAT.Netto = 1000m;
+					//dodanie elementów VAT
+					ElemEwidencjiVATSprzedaz elemVAT = new ElemEwidencjiVATSprzedaz(ewidencja);
+					vat.EleEwidencjiVATT.AddRow(elemVAT);
+					elemVAT.DefinicjaStawki = core.DefStawekVat[StatusStawkiVat.Opodatkowana, new Percent(0.22m), false];
+					elemVAT.Netto = 1000m;
 
-						//Płatności generują się automatycznie po każdej zmianie wartości ewidencji
+					//Płatności generują się automatycznie po każdej zmianie wartości ewidencji
 
-						// dodanie opisu analitycznego
-						ElementOpisuEwidencji elemOpisu = new ElementOpisuEwidencji(ewidencja);
-						ks.OpisAnalityczny.AddRow(elemOpisu);
-						elemOpisu.Wymiar = "Przychody";
-						elemOpisu.Symbol = "701-0";
-						elemOpisu.Kwota = 1000m;
+					// dodanie opisu analitycznego
+					ElementOpisuEwidencji elemOpisu = new ElementOpisuEwidencji(ewidencja);
+					ks.OpisAnalityczny.AddRow(elemOpisu);
+					elemOpisu.Wymiar = "Przychody";
+					elemOpisu.Symbol = "701-0";
+					elemOpisu.Kwota = 1000m;
 
-						t.Commit();
-					}
-					session.Save();
+					t.Commit();
 				}
+				session.Save();
 			}
+		}
 
-			#endregion
+        #endregion
 
-	}
+    }
 }

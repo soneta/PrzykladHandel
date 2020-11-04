@@ -27,9 +27,9 @@ Do poprawnego uruchomienia przykładu konieczne jest wykonanie paru czynności w
     - Soneta.CRM
     - Soneta.Deklaracje
     - Soneta.Handel
-    - Soneta.KadryPlace
     - Soneta.Kasa
     - Soneta.Ksiega
+    - Soneta.Start
     - Soneta.Types
  - Skasować zaznaczone assembly.
  - Prawym klawiszem myszy kliknąć na gałąź drzewa References i uruchomić funkcję Add Reference...
@@ -37,8 +37,9 @@ Do poprawnego uruchomienia przykładu konieczne jest wykonanie paru czynności w
  - W oknie wybrać folder instalacyjny programu enova (standardowo jest to c:\Program Files\Soneta\enova ...).
  - Zaznaczyć pliki DLL zawierajace assembly skasowane w poprzednim punkcie (9 plików DLL).
  - Zatwierdzić wszystkie okna przyciskami OK.
+ - Dla assembly Soneta.Start ustawić w oknie Properties opcję Copy Local na True, a dla pozostałych 8 assembly ustawić na False
 
-4. Program demonstracyjny zakłada, że w programie enova mamy założoną bazę danych o nazwie Pusta, w której znajduje się operator o nazwie Administrator z dostępem bez hasła. Baza danych wypełniona danymi demonstracyjnymi. Jeżeli nie masz założonej odpowiedniej bazy danych, to należy ją utworzyć lub odpowienio zmodyfikować plik Form1.cs.
+4. Program demonstracyjny zakłada, że w programie enova mamy założoną bazę danych o nazwie Demo, w której znajduje się operator o nazwie Administrator z dostępem bez hasła. Baza danych wypełniona danymi demonstracyjnymi. Jeżeli nie masz założonej odpowiedniej bazy danych, to należy ją utworzyć lub odpowienio zmodyfikować plik Form1.cs.
 5. Po wykonaniu tych czynności można uruchomić program.
 
 **Zawartość przykładu**
