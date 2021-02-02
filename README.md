@@ -1,5 +1,8 @@
 **UWAGA - REPOZYTORIUM MA STATUS ARCHIWALNY - MOŻE ZAWIERAĆ ELEMENTY WYCOFANE**
 
+**Zaktualizowany przykład dostępny jest pod adresem**
+[https://github.com/soneta/Samples/tree/master/src/PrzykladHandel/PrzykladHandel](https://github.com/soneta/Samples/tree/master/src/PrzykladHandel/PrzykladHandel)
+
 **Dodawanie dokumentów handlowych**
 
 Poniższy przykład zawiera aplikację demonstracyjną, która jest w stanie dodać nowy dokument PZ oraz dokument inwentraryzacji do bazy danych programu enova przy pomocy logiki biznesowej. W tym celu wykorzystuje klasy logiki biznesowej programu enova, które zostały zainstalowane razem z aplikacją główną. Jednak przykład ten nie integruje się bezpośrednio z oknem programu enova lecz pozwala na tworzenie niezależnych programów ściśle współpracujących z system. W podobnych rozwiązaniach stosowanych przez inne firmy do realizacji stosuje się bezpośrednie połączenie do bazy danych i przetwarzanie np za pomocą języka SQL. Rozwiązanie to jest również możliwe i w systemie enova, jednak zalety wykonywania logiki biznesowej są olbrzymie:
